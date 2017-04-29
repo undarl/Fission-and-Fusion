@@ -1,28 +1,27 @@
 # Fission and Fusion
 
 This mod aims to add portable fission technology, predecessor fusion
-technology, and a few other tweaks along those lines. It is still in heavy
+technology, and a few other tweaks along those lines. It is still in early
 development.
 
-**Status list:**
-
-* Heavy Water and Deuterium production: testing
-* Fusion Generator: NYI
-* Fusion Reactor: NYI
-* Portable Nuclear Fuel Cell: NYI
-* Portable Fission Reactor: NYI
-* Radioisotopes: NYI
-* Radioisotope Thermoelectric Generators: NYI
-* Fuel Cell reprocessing for radioisotopes: NYI
-* New technologies: NYI
-* Updated Portabke Fusion Reactor tech and recipe: NYI
-* Custom fluid graphics: NYI
-* Custom recipe graphics: NYI
-* Custom building graphics: NYI
-* Custom equipment graphics: NYI
-* Custom item graphics: NYI
-* Angel's integrations: NYI
-* Bob's integrations: NYI
+**Feature List**
+* Heavy Water and Deuterium production: _testing_
+* Fusion Generator: _NYI_
+* Fusion Reactor: _NYI_
+* Portable Nuclear Fuel Cell: _NYI_
+* Portable Fission Reactor: _NYI_
+* Radioisotopes: _NYI_
+* Radioisotope Thermoelectric Generators: _NYI_
+* Fuel Cell reprocessing for radioisotopes: _NYI_
+* New technologies: _NYI_
+* Updated Portable Fusion Reactor tech and recipe: _NYI_
+* Custom fluid graphics: _NYI_
+* Custom recipe graphics: _NYI_
+* Custom building graphics: _NYI_
+* Custom equipment graphics: _NYI_
+* Custom item graphics: _NYI_
+* Angel's integrations: _NYI_
+* Bob's integrations: _NYI_
 
 **Inspirations**
 * GotLag's Reactors mod
