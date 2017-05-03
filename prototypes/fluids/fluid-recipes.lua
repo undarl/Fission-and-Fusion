@@ -7,7 +7,7 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-        {type = "fluid", name = "water", amount = 1200},
+        {type = "fluid", name = "water", amount = 1000},
     },
     results =
     {
@@ -36,7 +36,7 @@ data:extend({
     },
     results =
     {
-        {type = "fluid", name = "undarl-gas-deuterium", amount = 20, temperature = 165}
+        {type = "fluid", name = "undarl-gas-deuterium", amount = 20}
     },
     main_product = "",
     icon = "__undarl-fission-fusion__/graphics/icons/gas-deuterium.png",

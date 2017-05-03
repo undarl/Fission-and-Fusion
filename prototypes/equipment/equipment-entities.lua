@@ -7,7 +7,7 @@ data:extend(
 		{
 			type = "generator-equipment",
 			name = "undarl-fission-reactor-equipment",
-			sprite = 
+			sprite =
 			{
 				filename = "__undarl-fission-fusion__/graphics/fission-reactor-equipment.png",
 				width = 128,
@@ -33,6 +33,30 @@ data:extend(
 				burnt_inventory_size = 1
 			},
 			power = "750kW",
+			categories = {"armor"}
+		},
+		{
+			type = "generator-equipment",
+			name = "undarl-rtg-equipment",
+			sprite =
+			{
+				filename = "__undarl-fission-fusion__/graphics/rtg.png",
+				width = 128,
+				height = 128,
+				priority = "medium"
+			},
+			shape =
+			{
+				width = 2,
+				height = 2,
+				type = "full"
+			},
+			energy_source =
+			{
+				type = "electric",
+				usage_priority = "primary-output"
+			},
+			power = "75kW",
 			categories = {"armor"}
 		},
 })

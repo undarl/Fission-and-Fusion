@@ -6,22 +6,23 @@ development.
 
 **Feature List**
 * Heavy Water and Deuterium production: **stable**
-* Fusion Generator: _waiting for generator entity bugfix, hopefully_
-* Deuterium Pellets: _NYI_
-* Fusion Reactor: _NYI_
+* Fusion Generator: _working around generator entity bug_
+* Deuterium Pellets: **stable**
+* Fusion Reactor: **stable**
 * Portable Nuclear Fuel Cell: **stable**
-* Portable Fission Reactor: **stable**
-* Radioisotopes: _NYI_
-* Radioisotope Thermoelectric Generators: _NYI_
-* Fuel Cell reprocessing for radioisotopes: _NYI_
-* New fission technologies: _testing_
+* Portable Nuclear Reactor: **stable**
+* Radioisotopes: _testing_
+* Portable Radioisotope Thermoelectric Generators: _testing_
+* RTG Array building: _NYI_
+* Fuel Cell reprocessing for radioisotopes: _testing_
+* New fission technologies: _missing radioisotope tech_
 * New fusion technologies: _NYI_
 * Updated Portable Fusion Reactor tech and recipe: _NYI_
 * Custom fluid graphics: **done**
-* Custom recipe graphics: _partial_
-* Custom building graphics: _in place, need setup and tweaking_
-* Custom equipment graphics: _partial_
-* Custom item graphics: _partial_
+* Custom recipe graphics: **done for now**
+* Custom building graphics: _partial_
+* Custom equipment graphics: _evaluating_
+* Custom item graphics: _evaluating_
 * Settings: enable/disable fission/fusion/RTGs: _NYI_
 * GotLag's Nuclear Fuel integrations: _NYI_
 * Angel's integrations: _NYI_
