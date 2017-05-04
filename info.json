@@ -1,12 +1,12 @@
 {
-    "name": "undarl-fission-fusion",
-    "version": "0.0.1",
-    "title": "Fission and Fusion",
-    "author": "Undarl",
-    "dependencies": [
-        "base >= 0.15.3"
-    ],
-    "description": "Adds additional fission and fusion devices and technology. UNRELEASED ALPHA VERSION.",
-    "factorio_version": "0.15",
-    "homepage": ""
+	"name": "undarl-fission-fusion",
+	"version": "0.0.1",
+	"title": "Fission and Fusion",
+	"author": "Undarl",
+	"dependencies": [
+		"base >= 0.15.3"
+	],
+	"description": "Adds additional fission and fusion devices and technology. UNRELEASED ALPHA VERSION.",
+	"factorio_version": "0.15",
+	"homepage": ""
 }
