@@ -5,7 +5,7 @@ data:extend(
 			name = "undarl-fission-reactor-equipment",
 			sprite =
 			{
-				filename = "__undarl-fission-fusion__/graphics/fission-reactor-equipment.png",
+				filename = "__Fission and Fusion__/graphics/fission-reactor-equipment.png",
 				width = 128,
 				height = 128,
 				priority = "medium"

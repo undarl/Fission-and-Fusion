@@ -150,7 +150,7 @@ data:extend(
 		{
 			type = "reactor",
 			name = "undarl-fusion-reactor",
-			icon = "__undarl-fission-fusion__/graphics/icons/fusion-reactor.png",
+			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {hardness = 0.2, mining_time = 0.5, result = "undarl-fusion-reactor"},
 			max_health = 500,
@@ -185,7 +185,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__undarl-fission-fusion__/graphics/fusion-reactor.png",
+						filename = "__Fission and Fusion__/graphics/fusion-reactor.png",
 						width = 160,
 						height = 160,
 						shift = { - 0.03125, - 0.1875 },
@@ -195,7 +195,7 @@ data:extend(
 
 			working_light_picture =
 			{
-				filename = "__undarl-fission-fusion__/graphics/fusion-reactor-lights.png",
+				filename = "__Fission and Fusion__/graphics/fusion-reactor-lights.png",
 				width = 160,
 				height = 160,
 				shift = { - 0.03125, - 0.1875 },

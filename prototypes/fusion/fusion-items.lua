@@ -13,7 +13,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-deuterium-pellets",
-			icon = "__undarl-fission-fusion__/graphics/icons/deuterium-pellets.png",
+			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-d",
@@ -26,7 +26,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-fusion-reactor",
-			icon = "__undarl-fission-fusion__/graphics/icons/fusion-reactor.png",
+			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
 			order = "b[steam-power]-c[steam-turbine]",

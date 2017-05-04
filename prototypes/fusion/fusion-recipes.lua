@@ -15,7 +15,7 @@ data:extend(
 				{type = "fluid", name = "undarl-liquid-heavy-water", amount = 10}
 			},
 			main_product = "",
-			icon = "__undarl-fission-fusion__/graphics/icons/liquid-heavy-water.png",
+			icon = "__Fission and Fusion__/graphics/icons/liquid-heavy-water.png",
 			subgroup = "fluid-recipes",
 			order = "b[fluid-chemistry]-y",
 			crafting_machine_tint =
@@ -40,7 +40,7 @@ data:extend(
 				{type = "fluid", name = "undarl-gas-deuterium", amount = 20}
 			},
 			main_product = "",
-			icon = "__undarl-fission-fusion__/graphics/icons/gas-deuterium.png",
+			icon = "__Fission and Fusion__/graphics/icons/gas-deuterium.png",
 			subgroup = "fluid-recipes",
 			order = "b[fluid-chemistry]-z",
 			crafting_machine_tint =

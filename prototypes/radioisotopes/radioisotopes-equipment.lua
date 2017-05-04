@@ -5,7 +5,7 @@ data:extend(
 			name = "undarl-rtg-equipment",
 			sprite =
 			{
-				filename = "__undarl-fission-fusion__/graphics/rtg.png",
+				filename = "__Fission and Fusion__/graphics/rtg.png",
 				width = 128,
 				height = 128,
 				priority = "medium"

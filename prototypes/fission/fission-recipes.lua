@@ -22,7 +22,7 @@ data:extend(
 			enabled = false,
 			category = "centrifuging",
 			ingredients = {{"undarl-depleted-fuel-cell", 10}},
-			icon = "__undarl-fission-fusion__/graphics/icons/reprocess-portable-cell.png",
+			icon = "__Fission and Fusion__/graphics/icons/reprocess-portable-cell.png",
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-c",
 			main_product = "",
