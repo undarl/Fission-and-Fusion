@@ -6,7 +6,7 @@ development.
 
 ## Feature List
 * Heavy Water and Deuterium production: **stable**
-* Fusion Generator: _functional, needs auto-heating code_
+* Fusion Generator: **stable, needs graphics changes**
 * Deuterium Pellets: **stable**
 * Fusion Reactor: **stable**
 * Portable Nuclear Fuel Cell: **stable**
