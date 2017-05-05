@@ -8,6 +8,7 @@ require('prototypes.fusion.fusion-fluids')
 require('prototypes.fusion.fusion-entities')
 require('prototypes.fusion.fusion-items')
 require('prototypes.fusion.fusion-recipes')
+require('prototypes.fusion.fusion-technologies')
 
 require('prototypes.radioisotopes.radioisotopes-entities')
 require('prototypes.radioisotopes.radioisotopes-items')

@@ -4,7 +4,7 @@ data:extend(
 			type = "recipe",
 			name = "undarl-make-heavy-water",
 			category = "chemistry",
-			enabled = true,
+			enabled = false,
 			energy_required = 10,
 			ingredients =
 			{
@@ -29,7 +29,7 @@ data:extend(
 			type = "recipe",
 			name = "undarl-make-deuterium",
 			category = "chemistry",
-			enabled = true,
+			enabled = false,
 			energy_required = 5,
 			ingredients =
 			{
@@ -53,7 +53,7 @@ data:extend(
 		{
 			type = "recipe",
 			name = "undarl-fusion-generator",
-			enabled = true,
+			enabled = false,
 			ingredients = {{"iron-gear-wheel", 50}, {"copper-plate", 50}, {"pipe", 20}},
 			result = "undarl-fusion-generator"
 		},
@@ -76,7 +76,7 @@ data:extend(
 			type = "recipe",
 			name = "undarl-fusion-reactor",
 			energy_required = 4,
-			enabled = true,
+			enabled = false,
 			ingredients =
 			{
 				{"concrete", 500},

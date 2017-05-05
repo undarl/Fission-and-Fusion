@@ -16,14 +16,14 @@ development.
 * RTG Array building: **stable, needs graphics changes**
 * Fuel Cell reprocessing for radioisotopes: **stable**
 * New fission technologies: **stable**
-* New fusion technologies: _NYI_
+* New fusion technologies: **stable, advanced needs graphic**
 * New radioisotope technologies: **stable**
-* Updated Portable Fusion Reactor tech and recipe: _NYI_
+* Updated Portable Fusion Reactor tech and description: **stable**
 * Custom fluid graphics: **done**
-* Custom recipe graphics: **done for now**
+* Custom recipe graphics: **done**
 * Custom building graphics: _partial_
 * Custom equipment graphics: _evaluating_
-* Custom item graphics: _evaluating_
+* Custom item graphics: **done**
 * Settings: enable/disable fission/fusion/RTGs: _NYI_
 * GotLag's Nuclear Fuel integrations: _NYI_
 * Angel's integrations: _NYI_
