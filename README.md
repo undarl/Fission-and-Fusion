@@ -12,12 +12,12 @@ development.
 * Portable Nuclear Fuel Cell: **stable**
 * Portable Nuclear Reactor: **stable**
 * Radioisotopes: **stable**
-* Portable Radioisotope Thermoelectric Generators: **stable**
-* RTG Array building (14 RTGs in a building for 1.050 MW): _NYI_
-* Fuel Cell reprocessing for radioisotopes: _testing_
-* New fission technology: **stable**
-* New fusion technology: _NYI_
-* New radioisotope technology: _NYI_
+* Radioisotope Thermoelectric Generator: **stable**
+* RTG Array building: **stable, needs graphics changes**
+* Fuel Cell reprocessing for radioisotopes: **stable**
+* New fission technologies: **stable**
+* New fusion technologies: _NYI_
+* New radioisotope technologies: **stable**
 * Updated Portable Fusion Reactor tech and recipe: _NYI_
 * Custom fluid graphics: **done**
 * Custom recipe graphics: **done for now**

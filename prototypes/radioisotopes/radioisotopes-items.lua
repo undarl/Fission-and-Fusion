@@ -19,4 +19,14 @@ data:extend(
 			order = "a[energy-source]-c",
 			stack_size = 10
 		},
+		{
+			type = "item",
+			name = "undarl-rtg-array",
+			icon = "__base__/graphics/icons/accumulator.png",
+			flags = {"goes-to-quickbar"},
+			subgroup = "energy",
+			order = "h[fission-power]-a[rtg-array]",
+			place_result = "undarl-rtg-array",
+			stack_size = 10,
+		},
 })

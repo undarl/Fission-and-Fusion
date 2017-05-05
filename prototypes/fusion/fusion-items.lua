@@ -6,7 +6,7 @@ data:extend(
 			icon = "__base__/graphics/icons/accumulator.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
-			order = "b[steam-power]-c[steam-turbine]",
+			order = "g[fusion-power]-b[fusion-generator]",
 			place_result = "undarl-fusion-generator",
 			stack_size = 5
 		},
@@ -29,7 +29,7 @@ data:extend(
 			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
-			order = "b[steam-power]-c[steam-turbine]",
+			order = "g[fusion-power]-a[fusion-reactor]",
 			place_result = "undarl-fusion-reactor",
 			stack_size = 5
 		},
