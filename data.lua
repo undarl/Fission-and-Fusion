@@ -1,5 +1,3 @@
-local settings = settings["startup"]
-
 if settings["startup"]['undarl-enable-fission'].value then
 	require('prototypes.fission.fission-entities')
 	require('prototypes.fission.fission-items')

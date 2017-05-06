@@ -27,6 +27,7 @@ technology, and a few other tweaks along those lines. It is still in development
 * Ordering pass: **done**
 * Balancing pass: **initial pass complete**
 * GotLag's Nuclear Fuel integrations: _testing_
+* GotLag's Reactor Interface integration: _need to talk to GotLag_
 * Angel's integrations: _underway_
 * Bob's integrations: _NYI_
 
