@@ -1,8 +1,7 @@
 # Fission and Fusion
 
 This mod aims to add portable fission technology, predecessor fusion
-technology, and a few other tweaks along those lines. It is still in early
-development.
+technology, and a few other tweaks along those lines. It is still in development.
 
 ## Feature List
 * Heavy Water and Deuterium production: **stable**
@@ -22,13 +21,13 @@ development.
 * Custom fluid graphics: **done**
 * Custom recipe graphics: **done**
 * Custom building graphics: _partial_
-* Custom equipment graphics: _evaluating_
+* Custom equipment graphics: **placeholders done, need new graphics**
 * Custom item graphics: **done**
 * Settings: enable/disable fission/fusion/RTGs: **stable**
-* Ordering pass: _not started_
-* Balancing pass: _underway_
-* GotLag's Nuclear Fuel integrations: _NYI_
-* Angel's integrations: _NYI_
+* Ordering pass: **done**
+* Balancing pass: **initial pass complete**
+* GotLag's Nuclear Fuel integrations: _underway_
+* Angel's integrations: _underway_
 * Bob's integrations: _NYI_
 
 ## Credits and Thanks

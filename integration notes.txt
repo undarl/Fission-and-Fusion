@@ -4,8 +4,10 @@
 -Add portable plutonium cells
 
 =Angel's
--Transfer heavy water sep to hydro plants
+-Heavy water H2S exchange: replace sulfur with 10 hydrogen sulfide
 -Transfer deuterium electrolysis to electrolyzers, add oxygen byproduct
+entity: angels-electrolyser
+group: petrochem-electrolyser
 
 =Bob's
 -Transfer deuterium electrolysis to electrolyzers, add oxygen byproduct

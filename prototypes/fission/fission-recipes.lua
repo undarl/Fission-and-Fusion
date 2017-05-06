@@ -7,10 +7,9 @@ data:extend(
 			enabled = false,
 			ingredients =
 			{
-				{"iron-plate", 5},
-				{"plastic-bar", 2},
+				{"iron-plate", 2},
 				{"uranium-235", 1},
-				{"uranium-238", 9}
+				{"uranium-238", 4}
 			},
 			result = "undarl-portable-uranium-fuel-cell",
 			result_count = 20
@@ -18,7 +17,7 @@ data:extend(
 		{
 			type = "recipe",
 			name = "undarl-reprocess-portable-uranium-cell",
-			energy_required = 50,
+			energy_required = 30,
 			enabled = false,
 			category = "centrifuging",
 			ingredients = {{"undarl-depleted-uranium-fuel-cell", 10}},
@@ -30,7 +29,8 @@ data:extend(
 			{
 				{
 					name = "uranium-238",
-					amount = 2
+					probability = 0.75,
+					amount = 1
 				}
 			}
 		},
@@ -41,10 +41,10 @@ data:extend(
 			enabled = false,
 			ingredients =
 			{
-				{"plastic-bar", 10},
+				{"plastic-bar", 15},
 				{"steel-plate", 10},
 				{"advanced-circuit", 10},
-				{"copper-plate", 10},
+				{"copper-cable", 20},
 			},
 			result = "undarl-fission-reactor-equipment",
 		},

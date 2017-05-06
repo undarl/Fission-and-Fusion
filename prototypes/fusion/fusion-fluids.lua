@@ -10,11 +10,11 @@ data:extend(
             temperature_dependent =
             {
                 {
-                    max = 100,
+                    max = 101.4,
                     localised_name = "fluid-name.undarl-liquid-heavy-water"
                 },
                 {
-                    min = 100,
+                    min = 101.4,
                     localised_name = "fluid-name.undarl-gas-heavy-steam",
                     icon = "__base__/graphics/icons/fluid/steam.png",
                     base_color = {r = 0.5, g = 0.5, b = 0.5},

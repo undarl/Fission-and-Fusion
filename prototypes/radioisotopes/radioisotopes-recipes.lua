@@ -22,7 +22,8 @@ data:extend(
 			ingredients =
 			{
 				{"undarl-rtg-equipment", 14},
-				{"steel-plate", 5}
+				{"steel-plate", 20},
+				{"copper-cable", 10},
 			},
 			result = "undarl-rtg-array"
 		},
