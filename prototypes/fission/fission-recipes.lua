@@ -23,7 +23,7 @@ data:extend(
 			ingredients = {{"undarl-depleted-uranium-fuel-cell", 10}},
 			icon = "__Fission and Fusion__/graphics/icons/reprocess-portable-uranium-cell.png",
 			subgroup = "intermediate-product",
-			order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]",
+			order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]-m",
 			main_product = "",
 			results =
 			{

@@ -26,7 +26,7 @@ technology, and a few other tweaks along those lines. It is still in development
 * Settings: enable/disable fission/fusion/RTGs: **stable**
 * Ordering pass: **done**
 * Balancing pass: **initial pass complete**
-* GotLag's Nuclear Fuel integrations: _underway_
+* GotLag's Nuclear Fuel integrations: _testing_
 * Angel's integrations: _underway_
 * Bob's integrations: _NYI_
 

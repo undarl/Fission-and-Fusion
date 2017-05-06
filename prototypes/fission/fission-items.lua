@@ -6,7 +6,7 @@ data:extend(
 			icon = "__Fission and Fusion__/graphics/icons/portable-uranium-fuel-cell.png",
 			flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
-			order = "r[uranium-processing]-a[uranium-fuel-cell]",
+			order = "r[uranium-processing]-a[uranium-fuel-cell]-m",
 			fuel_category = "portable-nuclear",
 			burnt_result = "undarl-depleted-uranium-fuel-cell",
 			fuel_value = "675MJ",
@@ -18,7 +18,6 @@ data:extend(
 			icon = "__Fission and Fusion__/graphics/icons/depleted-uranium-fuel-cell.png",
 			flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
-			--order = "j",
 			stack_size = 60
 		},
 		{
