@@ -2,7 +2,7 @@ data:extend(
 	{
 		{
 			type = "recipe",
-			name = "undarl-portable-nuclear-fuel-cell",
+			name = "undarl-portable-uranium-fuel-cell",
 			energy_required = 10,
 			enabled = false,
 			ingredients =
@@ -12,19 +12,19 @@ data:extend(
 				{"uranium-235", 1},
 				{"uranium-238", 9}
 			},
-			result = "undarl-portable-nuclear-fuel-cell",
+			result = "undarl-portable-uranium-fuel-cell",
 			result_count = 20
 		},
 		{
 			type = "recipe",
-			name = "undarl-reprocess-portable-cell",
+			name = "undarl-reprocess-portable-uranium-cell",
 			energy_required = 50,
 			enabled = false,
 			category = "centrifuging",
-			ingredients = {{"undarl-depleted-fuel-cell", 10}},
-			icon = "__Fission and Fusion__/graphics/icons/reprocess-portable-cell.png",
+			ingredients = {{"undarl-depleted-uranium-fuel-cell", 10}},
+			icon = "__Fission and Fusion__/graphics/icons/reprocess-portable-uranium-cell.png",
 			subgroup = "intermediate-product",
-			order = "r[uranium-processing]-c",
+			order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]",
 			main_product = "",
 			results =
 			{

@@ -13,7 +13,7 @@ data:extend(
 				},
 				{
 					type = "unlock-recipe",
-					recipe = "undarl-portable-nuclear-fuel-cell",
+					recipe = "undarl-portable-uranium-fuel-cell",
 				}
 			},
 			prerequisites = {"modular-armor", "nuclear-power"},

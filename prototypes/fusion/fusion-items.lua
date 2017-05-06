@@ -6,7 +6,7 @@ data:extend(
 			icon = "__base__/graphics/icons/accumulator.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
-			order = "g[fusion-power]-b[fusion-generator]",
+			order = "z[fusion-power]-b[fusion-generator]",
 			place_result = "undarl-fusion-generator",
 			stack_size = 5
 		},
@@ -16,7 +16,7 @@ data:extend(
 			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "intermediate-product",
-			order = "r[uranium-processing]-d",
+			order = "r[uranium-processing]-z",
 			fuel_category = "fusion",
 			--Fuel value calculated from 40MW reactor draw * 50% reactor efficiency
 			--with a desired burn rate of 1 pellet per second
@@ -29,7 +29,7 @@ data:extend(
 			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
-			order = "g[fusion-power]-a[fusion-reactor]",
+			order = "z[fusion-power]-a[fusion-reactor]",
 			place_result = "undarl-fusion-reactor",
 			stack_size = 5
 		},

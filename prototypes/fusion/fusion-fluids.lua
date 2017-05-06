@@ -24,7 +24,7 @@ data:extend(
             base_color = {r = 0, g = 0, b = 0.6},
             flow_color = {r = 0, g = 0, b = 0.6},
             icon = "__Fission and Fusion__/graphics/icons/liquid-heavy-water.png",
-            order = "a[fluid]-a[water]",
+            order = "z[fusion-fluids]-a[heavy-water]",
             pressure_to_speed_ratio = 0.4,
             flow_to_energy_ratio = 0.59,
             gas_temperature = 100
@@ -39,7 +39,7 @@ data:extend(
             base_color = {r = 0.8, g = 0.9, b = 1.0},
             flow_color = {r = 0.8, g = 0.9, b = 1.0},
             icon = "__Fission and Fusion__/graphics/icons/gas-deuterium.png",
-            order = "a[fluid]-a[water]",
+            order = "z[fusion-fluids]-b[deuterium]",
             pressure_to_speed_ratio = 0.4,
             flow_to_energy_ratio = 0.59,
             gas_temperature = 15

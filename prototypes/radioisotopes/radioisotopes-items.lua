@@ -25,7 +25,7 @@ data:extend(
 			icon = "__base__/graphics/icons/accumulator.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
-			order = "h[fission-power]-a[rtg-array]",
+			order = "y[radioisotopes]-a[rtg-array]",
 			place_result = "undarl-rtg-array",
 			stack_size = 10,
 		},

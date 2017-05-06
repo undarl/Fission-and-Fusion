@@ -24,15 +24,17 @@ development.
 * Custom building graphics: _partial_
 * Custom equipment graphics: _evaluating_
 * Custom item graphics: **done**
-* Settings: enable/disable fission/fusion/RTGs: _NYI_
+* Settings: enable/disable fission/fusion/RTGs: **stable**
+* Ordering pass: _not started_
+* Balancing pass: _underway_
 * GotLag's Nuclear Fuel integrations: _NYI_
 * Angel's integrations: _NYI_
 * Bob's integrations: _NYI_
 
-## Credits
+## Credits and Thanks
 * **Roxor128**: for the initial outlines of much of the fusion technology.
 * **GotLag**: for the Reactors mod which inspired the radioisotope/RTG tech.
 * **Klonan**: for the KS Power mod, which taught me some power generation tricks.
-* **Arch666Angel**: for the thread of freely provided images from which the fusion reactor sprite was taken.
+* **Arch666Angel**: for the fusion reactor sprite, taken from the thread of discarded art.
 * **Sirenfal**: for help and patience while I was taking my first steps as a Factorio modder.
 * **Arumba**: for getting me interested in Factorio in the first place via his videos.

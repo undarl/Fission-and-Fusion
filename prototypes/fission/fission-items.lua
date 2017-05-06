@@ -2,23 +2,23 @@ data:extend(
 	{
 		{
 			type = "item",
-			name = "undarl-portable-nuclear-fuel-cell",
-			icon = "__Fission and Fusion__/graphics/icons/portable-nuclear-fuel-cell.png",
+			name = "undarl-portable-uranium-fuel-cell",
+			icon = "__Fission and Fusion__/graphics/icons/portable-uranium-fuel-cell.png",
 			flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
-			order = "r[uranium-processing]-c",
+			order = "r[uranium-processing]-a[uranium-fuel-cell]",
 			fuel_category = "portable-nuclear",
-			burnt_result = "undarl-depleted-fuel-cell",
-			fuel_value = "500MJ",
+			burnt_result = "undarl-depleted-uranium-fuel-cell",
+			fuel_value = "675MJ",
 			stack_size = 60
 		},
 		{
 			type = "item",
-			name = "undarl-depleted-fuel-cell",
-			icon = "__Fission and Fusion__/graphics/icons/depleted-fuel-cell.png",
+			name = "undarl-depleted-uranium-fuel-cell",
+			icon = "__Fission and Fusion__/graphics/icons/depleted-uranium-fuel-cell.png",
 			flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
-			order = "j",
+			--order = "j",
 			stack_size = 60
 		},
 		{
@@ -28,7 +28,7 @@ data:extend(
 			placed_as_equipment_result = "undarl-fission-reactor-equipment",
 			flags = {"goes-to-main-inventory"},
 			subgroup = "equipment",
-			order = "a[energy-source]-c",
+			order = "a[energy-source]-d",
 			stack_size = 10
 		},
 })

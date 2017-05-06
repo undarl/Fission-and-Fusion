@@ -1,0 +1,11 @@
+=Nuclear Fuel
+-Add plutonium chance to portable fuel cell reprocessing
+-Add radioisotope chance to plutonium cell reprocessing
+-Add portable plutonium cells
+
+=Angel's
+-Transfer heavy water sep to hydro plants
+-Transfer deuterium electrolysis to electrolyzers, add oxygen byproduct
+
+=Bob's
+-Transfer deuterium electrolysis to electrolyzers, add oxygen byproduct

@@ -1,8 +1,10 @@
 --Fusion generator temperature setting and update logic borrowed
 --with thanks from Klonan's diesel generator.
 
+local enabled = settings["startup"]['undarl-enable-fusion'].value
+
 function migrate_fusion_generators(surface)
-	if global.fusion_gens then return end
+	if global.fusion_gens or not enabled then return end
 	global.fusion_generator = nil
 	global.archived_fusion_generator = nil
 	local array = {}
@@ -16,7 +18,7 @@ end
 
 function check_fusion_generators()
 
-	if not global.fusion_gens then return end
+	if not global.fusion_gens or not enabled then return end
 
 	local heat = function(boxes)
 		local box = boxes[1]

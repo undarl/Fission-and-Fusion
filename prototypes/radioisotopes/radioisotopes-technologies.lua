@@ -9,14 +9,6 @@ data:extend(
 			{
 				{
 					type = "unlock-recipe",
-					recipe = "undarl-reprocess-radioisotope",
-				},
-				{
-					type = "unlock-recipe",
-					recipe = "undarl-portable-reprocess-radioisotope",
-				},
-				{
-					type = "unlock-recipe",
 					recipe = "undarl-rtg-equipment",
 				},
 				{
@@ -24,7 +16,7 @@ data:extend(
 					recipe = "undarl-rtg-array",
 				}
 			},
-			prerequisites = {"nuclear-power"},
+			prerequisites = {"nuclear-fuel-reprocessing"},
 			unit =
 			{
 				count = 100,
