@@ -3,8 +3,8 @@ data:extend(
 		{
 			type = "technology",
 			name = "undarl-fusion",
-			icon = "__Fission and Fusion__/graphics/fusion-reactor.png",
-			icon_size = 128,
+			icon = "__Fission and Fusion__/graphics/fusion_power.png",
+			icon_size = 256,
 			effects =
 			{
 				{
@@ -39,8 +39,8 @@ data:extend(
 		{
 			type = "technology",
 			name = "undarl-advanced-fusion",
-			icon = "__Fission and Fusion__/graphics/advanced-fusion.png",
-			icon_size = 128,
+			icon = "__Fission and Fusion__/graphics/advanced_fusion.png",
+			icon_size = 256,
 			effects =
 			{
 				{
