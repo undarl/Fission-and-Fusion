@@ -4,7 +4,7 @@
 	"title": "Fission and Fusion",
 	"author": "Undarl",
 	"dependencies": [
-		"base >= 0.15.3",
+		"base >= 0.15.9",
 		"?Nuclear Fuel >= 0.1.0"
 	],
 	"description": "Adds additional fission and fusion devices and technology. UNRELEASED ALPHA VERSION.",

@@ -27,13 +27,13 @@ technology, and a few other tweaks along those lines. It is still in development
 * Ordering pass: **done**
 * Balancing pass: **initial pass complete**
 * GotLag's Nuclear Fuel integrations: _testing_
-* GotLag's Reactor Interface integration: _need to talk to GotLag_
+* Fusion reactor interface based on GotLag's Reactor Interface mod: _entities placed; need control logic and new graphics_
 * Angel's integrations: _underway_
 * Bob's integrations: _NYI_
 
 ## Credits and Thanks
 * **Roxor128**: for the initial outlines of much of the fusion technology.
-* **GotLag**: for the Reactors mod which inspired the radioisotope/RTG tech.
+* **GotLag**: for inspiration from the Reactors mod and kind permission to use the Reactor Interface logic.
 * **Klonan**: for the KS Power mod, which taught me some power generation tricks.
 * **Arch666Angel**: for the fusion reactor sprite, taken from the thread of discarded art.
 * **Sirenfal**: for help and patience while I was taking my first steps as a Factorio modder.
