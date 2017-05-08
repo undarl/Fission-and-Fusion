@@ -12,8 +12,8 @@ data:extend(
 			},
 			shape =
 			{
-				width = 4,
-				height = 4,
+				width = 3,
+				height = 3,
 				type = "full"
 			},
 			energy_source =
@@ -28,7 +28,7 @@ data:extend(
 				fuel_inventory_size = 1,
 				burnt_inventory_size = 1
 			},
-			power = "750kW",
+			power = "500kW",
 			categories = {"armor"}
 		},
 })

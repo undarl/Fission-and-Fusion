@@ -22,14 +22,14 @@ technology, and a few other tweaks along those lines. It is still in development
 * Custom item graphics: **done**
 * Settings: **stable**
 * Ordering pass: **done**
-* Balancing pass: _shift PNR down to 500kW, maybe reprice_
+* Balancing pass: **initial pass done**
 * GotLag's Nuclear Fuel integrations: _testing_
 * Fusion reactor interface based on GotLag's Reactor Interface mod: _testing_
 * Angel's integrations: _NYI_
 * Bob's integrations: _NYI_
 
 ## Credits and Thanks
-* **Roxor128**: for the initial outlines of much of the fusion technology.
+* **Roxor128**: for the ideas for much of the fusion technology.
 * **GotLag**: for inspiration from the Reactors mod and kind permission to use the Reactor Interface logic.
 * **Klonan**: for the KS Power mod, which taught me some power generation tricks.
 * **Arch666Angel**: for the fusion reactor sprite, taken from the thread of discarded art.

@@ -23,7 +23,7 @@ if settings['startup']['undarl-enable-fission'].value then
 				order = "r[uranium-processing]-a[uranium-fuel-cell]-n",
 				fuel_category = "portable-nuclear",
 				burnt_result = "undarl-depleted-breeder-fuel-cell",
-				fuel_value = "350MJ",
+				fuel_value = "225MJ",
 				stack_size = 60
 			},
 			{

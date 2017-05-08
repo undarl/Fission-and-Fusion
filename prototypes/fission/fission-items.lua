@@ -9,7 +9,7 @@ data:extend(
 			order = "r[uranium-processing]-a[uranium-fuel-cell]-m",
 			fuel_category = "portable-nuclear",
 			burnt_result = "undarl-depleted-uranium-fuel-cell",
-			fuel_value = "675MJ",
+			fuel_value = "450MJ",
 			stack_size = 60
 		},
 		{
