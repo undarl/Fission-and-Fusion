@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "technology",
 			name = "undarl-radioisotopes",
-			icon = "__Fission and Fusion__/graphics/rtg_tech.png",
+			icon = "__Fission and Fusion__/graphics/rtg-hr.png",
 			icon_size = 256,
 			effects =
 			{

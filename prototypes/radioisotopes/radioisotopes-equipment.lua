@@ -8,7 +8,12 @@ data:extend(
 				filename = "__Fission and Fusion__/graphics/rtg.png",
 				width = 128,
 				height = 128,
-				priority = "medium"
+				priority = "medium",
+				hr_version = {
+					filename = "__Fission and Fusion__/graphics/rtg-hr.png",
+					width = 256,
+					height = 256,
+				}
 			},
 			shape =
 			{

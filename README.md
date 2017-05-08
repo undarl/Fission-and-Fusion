@@ -32,6 +32,7 @@ technology, and a few other tweaks along those lines. It is still in development
 * **Roxor128**: for the ideas for much of the fusion technology.
 * **GotLag**: for inspiration from the Reactors mod and kind permission to use the Reactor Interface logic.
 * **Klonan**: for the KS Power mod, which taught me some power generation tricks.
-* **Arch666Angel**: for the fusion reactor sprite, taken from the thread of discarded art.
+* **Arch666Angel**: for the generous thread of discarded art, from which I've used several sprites.
 * **Sirenfal**: for help and patience while I was taking my first steps as a Factorio modder.
 * **Arumba**: for getting me interested in Factorio in the first place via his videos.
+e

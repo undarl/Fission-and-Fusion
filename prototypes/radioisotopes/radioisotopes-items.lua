@@ -22,7 +22,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-rtg-array",
-			icon = "__base__/graphics/icons/accumulator.png",
+			icon = "__Fission and Fusion__/graphics/icons/rtg-array.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
 			order = "y[radioisotopes]-a[rtg-array]",
