@@ -22,9 +22,9 @@ technology, and a few other tweaks along those lines. It is still in development
 * Custom item graphics: **done**
 * Settings: **stable**
 * Ordering pass: **done**
-* Balancing pass: **initial pass complete**
+* Balancing pass: _shift PNR down to 500kW, maybe reprice_
 * GotLag's Nuclear Fuel integrations: _testing_
-* Fusion reactor interface based on GotLag's Reactor Interface mod: _entities placed; need control logic and new graphics_
+* Fusion reactor interface based on GotLag's Reactor Interface mod: _testing_
 * Angel's integrations: _NYI_
 * Bob's integrations: _NYI_
 

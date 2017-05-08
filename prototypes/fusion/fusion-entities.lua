@@ -1,30 +1,32 @@
 --Sprite definition for the reactor interface
 interface_sprite =
 {
-	filename = "__Reactor Interface__/graphics/entity/reactor-interface/reactor-interface.png",
+	filename = "__Fission and Fusion__/graphics/fusion-reactor-interface.png",
 	priority = "extra-high",
 	width = 48,
 	height = 48,
 	frame_count = 1,
-	shift = {0, - 1.5},
+	shift = {-0.25, 0.5},
+	scale = 0.8,
 	hr_version = {
-		filename = "__Reactor Interface__/graphics/entity/reactor-interface/hr-reactor-interface.png",
+		filename = "__Fission and Fusion__/graphics/fusion-reactor-interface-hr.png",
 		width = 96,
 		height = 96,
 		frame_count = 1,
-		shift = {0, - 1.5},
-		scale = 0.5
+		shift = {-0.25, 0.5},
+		scale = 0.4
 	}
 }
 
 --Sprite definition for the reactor interface leds
 interface_led =
 {
-	filename = "__Reactor Interface__/graphics/entity/reactor-interface/reactor-interface-led.png",
+	filename = "__Fission and Fusion__/graphics/reactor-interface-led.png",
 	width = 12,
 	height = 12,
 	frame_count = 1,
-	shift = util.by_pixel(-10, - 40.5)
+	--shift = util.by_pixel(-10, - 26)
+	shift = util.by_pixel(-11, 4)
 }
 
 --Wire connection definitions for the reactor interface
@@ -32,13 +34,15 @@ interface_connection =
 {
 	shadow =
 	{
-		red = {3.75, 0},
-		green = {4.28125, 0},
+		red = {0, 0},
+		green = {0, 0},
 	},
 	wire =
 	{
-		red = { - 0.25, - 1.375},
-		green = {0.28125, - 1.375},
+		--red = { - 0.5, 0.25},
+		--green = {- 0.5, - 0.25},
+		red = util.by_pixel(-18, 8),
+		green = util.by_pixel(-18, 27),
 	}
 }
 
@@ -390,8 +394,8 @@ data:extend(
 			icon_size = 32,
 			flags = {"player-creation", "not-deconstructable"},
 			max_health = 120,
-			collision_box = {{ - 0.5, - 0.5}, {0.5, 0.5}},
-			selection_box = {{ - 1, - 2.5}, {1, - 0.5}},
+			collision_box = {{ - 0.75, 0}, {0.25, 1}},
+			selection_box = {{ - 0.75, 0}, {0.25, 1}},
 			selection_priority = 255,
 			item_slot_count = 10,
 			sprites =

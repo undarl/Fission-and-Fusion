@@ -1,4 +1,8 @@
-require "fusion-generator-scripts"
+require ('scripts.fusion-generator-scripts')
+require ('scripts.fusion-reactor-scripts')
+
+global = global or {}
+global.reactors = global.reactors or {}
 
 script.on_configuration_changed(function(data)
 	if data.mod_changes == nil then return end
@@ -16,16 +20,30 @@ script.on_configuration_changed(function(data)
 end)
 
 script.on_event(defines.events.on_tick, function(event)
+	update_reactor_interfaces(event)
 	check_fusion_generators()
 end)
 
-function BuiltEntity(event)
+local function BuiltEntity(event)
 	local entity = event.created_entity
 	if entity.name == "undarl-fusion-generator" then
 		placed_fusion_generator(entity)
+		return
+	elseif entity.name == "undarl-fusion-reactor" then
+		add_interface(entity)
+		return
+	end
+end
+
+local function DestedEntity(event)
+	if event.entity.name == "undarl-fusion-reactor" then
+		remove_interface(event.entity)
 		return
 	end
 end
 
 script.on_event(defines.events.on_built_entity, BuiltEntity)
 script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
+script.on_event(defines.events.on_preplayer_mined_item, DestedEntity)
+script.on_event(defines.events.on_robot_pre_mined, DestedEntity)
+script.on_event(defines.events.on_entity_died, DestedEntity)
