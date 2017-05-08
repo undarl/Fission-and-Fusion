@@ -9,10 +9,10 @@ technology, and a few other tweaks along those lines. It is still in development
 * Deuterium Pellets: **stable**
 * Fusion Reactor: **stable**
 * Portable Nuclear Fuel Cell: **stable**
-* Portable Nuclear Reactor: **stable, needs new graphics**
+* Portable Nuclear Reactor: **stable**
 * Radioisotopes: **stable**
-* Radioisotope Thermoelectric Generator: **stable, needs new graphics**
-* RTG Array building: **stable, needs new graphics**
+* Radioisotope Thermoelectric Generator: **stable**
+* RTG Array building: **stable**
 * New fission technology: **stable**
 * New fusion technologies: **stable**
 * New radioisotope technology: **stable**
