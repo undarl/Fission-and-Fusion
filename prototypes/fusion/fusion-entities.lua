@@ -6,19 +6,19 @@ interface_sprite =
 	width = 48,
 	height = 48,
 	frame_count = 1,
-	shift = {-0.25, 0.5},
+	shift = { - 0.25, 0.5},
 	scale = 0.8,
 	hr_version = {
 		filename = "__Fission and Fusion__/graphics/fusion-reactor-interface-hr.png",
 		width = 96,
 		height = 96,
 		frame_count = 1,
-		shift = {-0.25, 0.5},
+		shift = { - 0.25, 0.5},
 		scale = 0.4
 	}
 }
 
---Sprite definition for the reactor interface leds
+--Sprite definition for the reactor interface LED
 interface_led =
 {
 	filename = "__Fission and Fusion__/graphics/reactor-interface-led.png",
@@ -423,7 +423,6 @@ data:extend(
 
 			activity_led_light_offsets =
 			{
-				-- {-0.3125,-0.578125},
 				{ - 0.3125, - 1.578125},
 				{ - 0.3125, - 1.578125},
 				{ - 0.3125, - 1.578125},

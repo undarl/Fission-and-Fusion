@@ -1,3 +1,5 @@
+--Fusion reactor interfaces adapted with thanks from GotLag's Reactor Interface.
+
 function add_interface(reactor)
 	local interface = reactor.surface.create_entity
 	{
@@ -5,6 +7,7 @@ function add_interface(reactor)
 		position = {reactor.position.x - 1.5, reactor.position.y + 1.25},
 		force = reactor.force
 	}
+
 	interface.operable = false
 	interface.destructible = false
 	if game.virtual_signal_prototypes['signal-temperature'] then
@@ -13,6 +16,7 @@ function add_interface(reactor)
 		SIGNAL_TEMP = {type = "virtual", name = "undarl-signal-temperature"}
 	end
 	SIGNAL_FUEL_AVAILABLE = {type = "item", name = "undarl-deuterium-pellets"}
+
 	table.insert(global.reactors,
 		{
 			id = reactor.unit_number,
@@ -49,8 +53,7 @@ function update_reactor_interfaces(event)
 	while index <= #global.reactors do
 		local reactor = global.reactors[index]
 		reactor.signals.parameters["temp"].count = reactor.entity.temperature
-		local burner = reactor.entity.burner
-		local fuel = burner.inventory
+		local fuel = reactor.entity.burner.inventory
 		if not fuel.is_empty() then
 			reactor.signals.parameters["fuel"].signal.name = fuel[1].name
 			reactor.signals.parameters["fuel"].count = fuel[1].count

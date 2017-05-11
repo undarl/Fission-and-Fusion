@@ -5,7 +5,8 @@
 	"author": "Undarl",
 	"dependencies": [
 		"base >= 0.15.9",
-		"?Nuclear Fuel >= 0.1.0"
+		"?Nuclear Fuel >= 0.1.0",
+		"?angelspetrochem >= 0.5.2"
 	],
 	"description": "Adds additional fission and fusion devices and technology. UNRELEASED ALPHA VERSION.",
 	"factorio_version": "0.15",

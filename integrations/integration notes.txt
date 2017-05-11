@@ -3,6 +3,3 @@
 -Transfer deuterium electrolysis to electrolyzers, add oxygen byproduct
 entity: angels-electrolyser
 group: petrochem-electrolyser
-
-=Bob's
--Transfer deuterium electrolysis to electrolyzers, add oxygen byproduct?

@@ -32,7 +32,14 @@ data:extend(
 			unit =
 			{
 				count = 1000,
-				ingredients = {{"science-pack-1", 2}, {"science-pack-2", 2}, {"science-pack-3", 2}, {"production-science-pack", 2}, {"high-tech-science-pack", 2}, {"space-science-pack", 1}},
+				ingredients = {
+					{"science-pack-1", 2},
+					{"science-pack-2", 2},
+					{"science-pack-3", 2},
+					{"production-science-pack", 2},
+					{"high-tech-science-pack", 2},
+					{"space-science-pack", 1}
+				},
 				time = 30
 			},
 		},
@@ -53,7 +60,14 @@ data:extend(
 			unit =
 			{
 				count = 1000,
-				ingredients = {{"science-pack-1", 3}, {"science-pack-2", 3}, {"science-pack-3", 3}, {"production-science-pack", 3}, {"high-tech-science-pack", 3}, {"space-science-pack", 1}},
+				ingredients = {
+					{"science-pack-1", 3},
+					{"science-pack-2", 3},
+					{"science-pack-3", 3},
+					{"production-science-pack", 3},
+					{"high-tech-science-pack", 3},
+					{"space-science-pack", 1}
+				},
 				time = 30
 			},
 		},

@@ -4,6 +4,7 @@ require ('scripts.fusion-reactor-scripts')
 global = global or {}
 global.reactors = global.reactors or {}
 
+---Re-populate fusion generator table and reset recipes after a mod update.
 script.on_configuration_changed(function(data)
 	if data.mod_changes == nil then return end
 	if data.mod_changes["Fission and Fusion"] == nil then return end
@@ -19,11 +20,13 @@ script.on_configuration_changed(function(data)
 	end
 end)
 
+--Update reactor interface information and fusion generator temperature
 script.on_event(defines.events.on_tick, function(event)
 	update_reactor_interfaces(event)
 	check_fusion_generators()
 end)
 
+--Run additional setup when placing a fusion generator or reactor
 local function BuiltEntity(event)
 	local entity = event.created_entity
 	if entity.name == "undarl-fusion-generator" then
@@ -35,6 +38,7 @@ local function BuiltEntity(event)
 	end
 end
 
+--Remove fusion reactor unterface along with its reactor
 local function DestedEntity(event)
 	if event.entity.name == "undarl-fusion-reactor" then
 		remove_interface(event.entity)
@@ -42,6 +46,7 @@ local function DestedEntity(event)
 	end
 end
 
+--Event hooks
 script.on_event(defines.events.on_built_entity, BuiltEntity)
 script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
 script.on_event(defines.events.on_preplayer_mined_item, DestedEntity)
