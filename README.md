@@ -5,7 +5,7 @@ technology, and a few other tweaks along those lines. It is still in development
 
 ## Feature List
 * Heavy Water and Deuterium production: **stable**
-* Fusion Generator: **stable, needs new graphics**
+* Fusion Generator: **stable, _needs new graphics_**
 * Deuterium Pellets: **stable**
 * Fusion Reactor: **stable**
 * Portable Nuclear Fuel Cell: **stable**
@@ -23,10 +23,10 @@ technology, and a few other tweaks along those lines. It is still in development
 * Settings: **stable**
 * Ordering pass: **done**
 * Balancing pass: **initial pass done**
-* GotLag's Nuclear Fuel integrations: _testing_
-* Fusion reactor interface based on GotLag's Reactor Interface mod: _testing_
-* Basic Angel's integrations: _NYI_
-* Documentation pass: _started_
+* GotLag's Nuclear Fuel integrations: **done**
+* Fusion reactor interface based on GotLag's Reactor Interface mod: **done**
+* Basic Angel's integrations: _testing_
+* Documentation pass: **done**
 * Rewrite of README : _started_
 
 ## Current Integrations with Other Mods
@@ -36,6 +36,8 @@ technology, and a few other tweaks along those lines. It is still in development
   * Add portable plutonium cells and reprocessing for them
   * Add portable MOX cell recipe
 * [Angel's Petro Chemical Processing](https://mods.factorio.com/mods/Arch666Angel/angelspetrochem) by Arch666Angel
+  * Change heavy water hydrogen sulfide exchange recipe to use Angel's hydrogen sulfide
+  * Change deuterium electrolysis recipe to use Angel's electrolysers and create oxygen as a byproduct
 
 ## Future Possibilities
 * Upgraded graphics

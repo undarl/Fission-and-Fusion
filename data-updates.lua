@@ -4,7 +4,7 @@ if mods['Nuclear Fuel'] then
 end
 
 --Integrations for Angel's Petrochem
-if mods['angelspetrochem'] then
+if mods['angelspetrochem'] and settings['startup']['undarl-enable-fusion'].value then
 	require('integrations.AngelPetrochem')
 end
 
