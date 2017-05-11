@@ -438,7 +438,7 @@ data:extend(
 				interface_connection
 			},
 
-			circuit_wire_max_distance = 7.5
+			circuit_wire_max_distance = 9
 		},
 		--Reactor interface signal group
 		{

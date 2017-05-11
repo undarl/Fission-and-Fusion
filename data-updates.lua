@@ -1,5 +1,5 @@
 --Integrations for GotLag's Nuclear Fuel
-if data.raw.recipe['mox-fuel-cell'] then
+if mods['Nuclear Fuel'] then
 	require('integrations.NuclearFuel')
 end
 

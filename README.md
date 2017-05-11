@@ -25,8 +25,13 @@ technology, and a few other tweaks along those lines. It is still in development
 * Balancing pass: **initial pass done**
 * GotLag's Nuclear Fuel integrations: _testing_
 * Fusion reactor interface based on GotLag's Reactor Interface mod: _testing_
-* Angel's integrations: _NYI_
-* Bob's integrations: _NYI_
+* Basic Angel's integrations: _NYI_
+* Documentation pass: _not started_
+* Rewrite of README: _not started_
+
+## Future Possibilities
+* Further Angel's integrations
+* Bob's integrations
 
 ## Credits and Thanks
 * **Roxor128**: for the ideas for much of the fusion technology.
@@ -35,4 +40,3 @@ technology, and a few other tweaks along those lines. It is still in development
 * **Arch666Angel**: for the generous thread of discarded art, from which I've used several sprites.
 * **Sirenfal**: for help and patience while I was taking my first steps as a Factorio modder.
 * **Arumba**: for getting me interested in Factorio in the first place via his videos.
-e
