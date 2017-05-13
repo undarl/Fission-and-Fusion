@@ -11,7 +11,7 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 
 **Radioisotopes:** These non-fissionable byproducts have a chance to be returned when reprocessing any kind of nuclear fuel cells. While they aren't useful for making new fuel cells, the heat of their decay can be harnessed by RTGs.
 
-**Radioisotope Thermoelectric Generators:**: Maintenance-free energy sources for equipment, powered by the heat of decaying radioisotopes. Not as efficient as reactors, but a step up from solar panels.
+**Radioisotope Thermoelectric Generators:** Maintenance-free energy sources for equipment, powered by the heat of decaying radioisotopes. Not as efficient as reactors, but a step up from solar panels.
 
 **Radioisotope Thermoelectric Generator Arrays:** An array of RTGs designed to provide factory-level power.
 
