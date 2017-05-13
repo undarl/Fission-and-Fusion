@@ -242,12 +242,20 @@ data:extend(
 			},
 
 			vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+			working_sound =
+			{
+				sound =
+				{
+					filename = "__base__/sound/electric-furnace.ogg",
+					volume = 0.8
+				},
+			},
 		},
 		{
 			--Fusion generator
 			type = "generator",
 			name = "undarl-fusion-generator",
-			icon = "__base__/graphics/icons/steam-turbine.png",
+			icon = "__Fission and Fusion__/graphics/icons/fusion-generator.png",
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {mining_time = 1, result = "undarl-fusion-generator"},
 			max_health = 300,
@@ -257,25 +265,18 @@ data:extend(
 			effectivity = 10000,
 			fluid_usage_per_tick = 0.017, --About 1 gas per second
 			maximum_temperature = 20,
-			resistances =
-			{
-				{
-					type = "fire",
-					percent = 70
-				}
-			},
-			collision_box = {{ - 1.35, - 2.35}, {1.35, 2.35}},
-			selection_box = {{ - 1.5, - 2.5}, {1.5, 2.5}},
+			collision_box = {{ - 0.9, - 0.9}, {0.9, 0.9}},
+			selection_box = {{ - 1, - 1}, {1, 1}},
 			fluid_box =
 			{
 				base_area = 1,
-				height = 2,
+				--height = 2,
 				base_level = -1,
 				pipe_covers = pipecoverspictures(),
 				pipe_connections =
 				{
-					--{ type = "input", position = {0, 3} },
-					{ type = "input", position = {0, - 3} },
+					{ type = "input", position = {0.5, 1.5} },
+					{ type = "input", position = {0.5, - 1.5} },
 				},
 				production_type = "input"
 			},
@@ -294,40 +295,12 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__base__/graphics/entity/steam-turbine/steam-turbine-H.png",
-						width = 160,
-						height = 123,
-						frame_count = 8,
-						line_length = 4,
-						shift = util.by_pixel(0, - 2.5),
-						hr_version = {
-							filename = "__base__/graphics/entity/steam-turbine/hr-steam-turbine-H.png",
-							width = 320,
-							height = 245,
-							frame_count = 8,
-							line_length = 4,
-							shift = util.by_pixel(0, - 2.75),
-							scale = 0.5
-						},
-					},
-					{
-						filename = "__base__/graphics/entity/steam-turbine/steam-turbine-H-shadow.png",
-						width = 217,
-						height = 74,
-						frame_count = 8,
-						line_length = 4,
-						draw_as_shadow = true,
-						shift = util.by_pixel(28.75, 18),
-						hr_version = {
-							filename = "__base__/graphics/entity/steam-turbine/hr-steam-turbine-H-shadow.png",
-							width = 435,
-							height = 150,
-							frame_count = 8,
-							line_length = 4,
-							draw_as_shadow = true,
-							shift = util.by_pixel(28.5, 18),
-							scale = 0.5
-						},
+						filename = "__Fission and Fusion__/graphics/fusion-generator.png",
+						width = 75,
+						height = 72,
+						frame_count = 1,
+						line_length = 1,
+						--shift = util.by_pixel(0, - 2.5),
 					},
 				},
 			},
@@ -336,40 +309,12 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__base__/graphics/entity/steam-turbine/steam-turbine-V.png",
-						width = 108,
-						height = 173,
-						frame_count = 8,
-						line_length = 4,
-						shift = util.by_pixel(5, 6.5),
-						hr_version = {
-							filename = "__base__/graphics/entity/steam-turbine/hr-steam-turbine-V.png",
-							width = 217,
-							height = 347,
-							frame_count = 8,
-							line_length = 4,
-							shift = util.by_pixel(4.75, 6.75),
-							scale = 0.5
-						},
-					},
-					{
-						filename = "__base__/graphics/entity/steam-turbine/steam-turbine-V-shadow.png",
-						width = 151,
-						height = 131,
-						frame_count = 8,
-						line_length = 4,
-						draw_as_shadow = true,
-						shift = util.by_pixel(39.5, 24.5),
-						hr_version = {
-							filename = "__base__/graphics/entity/steam-turbine/hr-steam-turbine-V-shadow.png",
-							width = 302,
-							height = 260,
-							frame_count = 8,
-							line_length = 4,
-							draw_as_shadow = true,
-							shift = util.by_pixel(39.5, 24.5),
-							scale = 0.5
-						},
+						filename = "__Fission and Fusion__/graphics/fusion-generator.png",
+						width = 75,
+						height = 72,
+						frame_count = 1,
+						line_length = 1,
+						--shift = util.by_pixel(5, 6.5),
 					},
 				},
 			},
@@ -378,13 +323,10 @@ data:extend(
 			{
 				sound =
 				{
-					filename = "__base__/sound/steam-engine-90bpm.ogg",
-					volume = 0.6
+					filename = "__base__/sound/electric-furnace.ogg",
+					volume = 0.8
 				},
-				match_speed_to_activity = true,
 			},
-			min_perceived_performance = 0.25,
-			performance_to_sound_speedup = 0.5
 		},
 		{
 			--Fusion reactor circuit interface

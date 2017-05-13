@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-fusion-generator",
-			icon = "__base__/graphics/icons/accumulator.png",
+			icon = "__Fission and Fusion__/graphics/icons/fusion-generator.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
 			order = "z[fusion-power]-b[fusion-generator]",
