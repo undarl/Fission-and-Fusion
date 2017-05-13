@@ -36,6 +36,10 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 * [Angel's Petro Chemical Processing](https://mods.factorio.com/mods/Arch666Angel/angelspetrochem) by Arch666Angel
   * Change heavy water hydrogen sulfide exchange recipe to use Angel's hydrogen sulfide
   * Change deuterium electrolysis recipe to use Angel's electrolysers and create oxygen as a byproduct
+
+## Changelog
+* 0.1.0 - Initial release
+
 ## Future Possibilities
 * Upgraded graphics
   * I've started [a request thread](https://forums.factorio.com/viewtopic.php?f=15&t=46417) in the Factorio Texture Packs forum should anyone with artistic skill feel inspired.

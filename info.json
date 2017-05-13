@@ -8,7 +8,7 @@
 		"?Nuclear Fuel >= 0.1.0",
 		"?angelspetrochem >= 0.5.2"
 	],
-	"description": "Adds additional fission and fusion devices and technology.",
+	"description": "Adds portable fission generators, radioisotope thermoelectric generators, and factory-level fusion power.",
 	"factorio_version": "0.15",
 	"homepage": ""
 }
