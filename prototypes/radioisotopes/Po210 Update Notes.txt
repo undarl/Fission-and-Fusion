@@ -1,0 +1,24 @@
+A full Factorio day/night cycle is 25000 ticks, ~7mins.
+
+Looking at degrading RTG performance by 5% per day, which would
+give them a total of around 2.3hrs of useful life.
+
+Possible settings to choose number of days per degradation.
+
+21 item-entity pairs: one empty, one full, 5-95% by fives.
+
+Creation function that adds new RTGs to global table: entity, depletion state,
+ticks in state, equipmentgrid. Runs on place and place equipment events.
+
+Update function that runs every 60ticks/1sec and updates global
+RTG tables. If ticks are >= 25000 (or setting) then update depletion state,
+reset ticks in state, swap entity for new entity. Else increment ticks in state.
+
+Destruction function that nulls global RTG table entries. Runs on mine and
+remove equipment events.
+
+Assembler recipe to deconstruct RTG arrays into 14 RTGs and 50% or so of other
+used components.
+
+Assembler recipe to deconstruct RTGs into 50% or so of used components
+less radioisotopes.

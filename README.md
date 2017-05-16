@@ -40,6 +40,10 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 ## Changelog
 * 0.1.0 - Initial release
 
+## Currently Working On
+* Converting RTGs to a Polonium-210 model, wherein they deplete over game-relevant timeframes.
+  * Create entity-item pairings to represent full, partially depleted (every 5%), and fully depleted RTGs.
+  * Create a reprocessing recipe for both kinds of RTGs to get back a tithe of the used components and prevent buildup of useless depleted items.
 ## Future Possibilities
 * Upgraded graphics
   * I've started [a request thread](https://forums.factorio.com/viewtopic.php?f=15&t=46417) in the Factorio Texture Packs forum should anyone with artistic skill feel inspired.
