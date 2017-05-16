@@ -4,7 +4,7 @@
 	"title": "Fission and Fusion",
 	"author": "Undarl",
 	"dependencies": [
-		"base >= 0.15.9",
+		"base >= 0.15.11",
 		"?Nuclear Fuel >= 0.1.0",
 		"?angelspetrochem >= 0.5.2"
 	],

@@ -20,8 +20,7 @@ data:extend(
             name = "undarl-gas-deuterium",
             default_temperature = 15,
             max_temperature = 20,
-            --heat_capacity should be 2.67MJ if the generator bug gets fixed
-            heat_capacity = "0.2KJ",
+            heat_capacity = "2.0MJ",
             base_color = {r = 0.8, g = 0.9, b = 1.0},
             flow_color = {r = 0.8, g = 0.9, b = 1.0},
             icon = "__Fission and Fusion__/graphics/icons/gas-deuterium.png",
