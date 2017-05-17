@@ -62,7 +62,7 @@ data:extend(
 			minable = {hardness = 0.2, mining_time = 0.5, result = "undarl-fusion-reactor"},
 			max_health = 500,
 			corpse = "big-remnants",
-			consumption = "40MW",
+			consumption = settings.startup['undarl-reactor-output'].value,
 			burner =
 			{
 				fuel_category = "fusion",
@@ -261,8 +261,7 @@ data:extend(
 			max_health = 300,
 			corpse = "big-remnants",
 			dying_explosion = "medium-explosion",
-			--Effectivity should be 0.75 if generator bug is fixed
-			effectivity = 10000,
+			effectivity = 1,
 			fluid_usage_per_tick = 0.017, --About 1 gas per second
 			maximum_temperature = 20,
 			collision_box = {{ - 0.9, - 0.9}, {0.9, 0.9}},

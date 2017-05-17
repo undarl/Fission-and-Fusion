@@ -1,3 +1,12 @@
+local recipemap =
+{
+	["40MW"] = "80MJ",
+	["60MW"] = "120MJ",
+	["80MW"] = "160MJ",
+}
+
+local PELLET_VALUE = recipemap[settings.startup['undarl-reactor-output'].value]
+
 data:extend(
 	{
 		{
@@ -18,9 +27,9 @@ data:extend(
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-z",
 			fuel_category = "fusion",
-			--Fuel value calculated from 40MW reactor draw * 50% reactor efficiency
+			--Fuel value calculated from reactor draw * 50% reactor efficiency
 			--with a desired burn rate of 1 pellet per second
-			fuel_value = "80MJ",
+			fuel_value = PELLET_VALUE,
 			stack_size = 60,
 		},
 		{

@@ -1,16 +1,20 @@
-Heat Reactor: 40MW/s at 50% eff and 1 pellet/s req 80MJ pellets
-MagConv Gen: 10MW/s at 75% eff, 1 gas/s, temp 20 req 2.67MJ gas heat capacity
--Value per gas at temp 20 = 13.35MJ
--6 gas per pellet (60 gas -> 10 pellet)
--1 pellet/s : 60 gas/10s
--18 distill plants->2 gas plants->1 pellet plant
--9 h2s plants->2 gas plants->1 pellet plant
+Reactor: 40MW at 50% eff and 1 pellet/s req 80MJ pellets
+         60MW at 50% eff and 1 pellet/s req 120MJ pellets
+		 80MW at 50% eff and 1 pellet/s req 160MJ pellets
+MagConv Gen: 10MW at 100% eff, 1 gas/s, temp 20 req 2MJ gas heat capacity
+Value per gas at temp 20 = 10MJ
+
+80MJ pellet <- 8 gas (80->10)
+120Mj pellet <- 12 gas (120->10)
+160MJ pellet <- 16 gas (160->10)
+
+8/12/16 h-water plants -> 2/3/4 deuterium plants -> 1 pellet plant
 
 Generator Entity Output Equation
 output-in-kW / (temperature-difference * heat-capacity-in-kJ) / effectivity = fluid-per-sec
 
 Solved for deuterium heat capacity
-10000 / (5 * 2670) / 0.75 = 1
+10000 / (5 * 2000) / 1 = 1
 
 Solved for effectivity using water heat capacity (workaround for bug)
 10000 / (5 * 0.2) / 10000 = 1
