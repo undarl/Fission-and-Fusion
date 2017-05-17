@@ -62,7 +62,7 @@ data:extend(
 			minable = {hardness = 0.2, mining_time = 0.5, result = "undarl-fusion-reactor"},
 			max_health = 500,
 			corpse = "big-remnants",
-			consumption = "40MW",
+			consumption = settings.startup['undarl-reactor-output'].value,
 			burner =
 			{
 				fuel_category = "fusion",

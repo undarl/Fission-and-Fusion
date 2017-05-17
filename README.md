@@ -38,6 +38,7 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
   * Change deuterium electrolysis recipe to use Angel's electrolysers and create oxygen as a byproduct
 
 ## Changelog
+* 0.2.0 - Increased default fusion reactor output by 50%; created a startup setting for reactor output; rebalanced fusion fuel recipes; removed workaround for generator heat capacity bug.
 * 0.1.0 - Initial release
 
 ## Future Possibilities

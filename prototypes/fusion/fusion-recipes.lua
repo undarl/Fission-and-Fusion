@@ -1,3 +1,12 @@
+local recipemap =
+{
+	["40MW"] = 80,
+	["60MW"] = 120,
+	["80MW"] = 160,
+}
+
+local PELLET_COST = recipemap[settings.startup['undarl-reactor-output'].value]
+
 data:extend(
 	{
 		{
@@ -5,10 +14,10 @@ data:extend(
 			name = "undarl-distill-heavy-water",
 			category = "chemistry",
 			enabled = false,
-			energy_required = 30,
+			energy_required = 4,
 			ingredients =
 			{
-				{type = "fluid", name = "water", amount = 3600},
+				{type = "fluid", name = "water", amount = 1000},
 			},
 			results =
 			{
@@ -30,10 +39,10 @@ data:extend(
 			name = "undarl-heavy-water-h2s-exchange",
 			category = "chemistry",
 			enabled = false,
-			energy_required = 15,
+			energy_required = 2,
 			ingredients =
 			{
-				{type = "fluid", name = "water", amount = 3600},
+				{type = "fluid", name = "water", amount = 1000},
 				{"sulfur", 1},
 			},
 			results =
@@ -56,7 +65,7 @@ data:extend(
 			name = "undarl-make-deuterium",
 			category = "chemistry",
 			enabled = false,
-			energy_required = 5,
+			energy_required = 2,
 			ingredients =
 			{
 				{type = "fluid", name = "undarl-liquid-heavy-water", amount = 20},
@@ -80,13 +89,12 @@ data:extend(
 			type = "recipe",
 			name = "undarl-deuterium-pellets",
 			category = "chemistry",
-			energy_required = 5,
+			energy_required = 4,
 			enabled = false,
-			--Deuterium gas at working (max) temperature has an energy of 13.35MJ/unit
-			--Multiply by 6 to get 80MJ for pellets
+			--Deuterium gas at working (max) temperature has an energy of 10MJ/unit
 			ingredients =
 			{
-				{type = "fluid", name = "undarl-gas-deuterium", amount = 60},
+				{type = "fluid", name = "undarl-gas-deuterium", amount = PELLET_COST},
 			},
 			result = "undarl-deuterium-pellets",
 			result_count = 10
