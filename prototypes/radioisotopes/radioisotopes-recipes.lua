@@ -8,9 +8,9 @@ data:extend(
 			ingredients =
 			{
 				{"undarl-radioisotopes", 2},
-				{"steel-plate", 10},
-				{"advanced-circuit", 5},
-				{"copper-cable", 10},
+				{"steel-plate", 5},
+				{"advanced-circuit", 3},
+				{"copper-cable", 5},
 			},
 			result = "undarl-rtg-equipment",
 		},
@@ -21,8 +21,8 @@ data:extend(
 			enabled = false,
 			ingredients =
 			{
-				{"undarl-rtg-equipment", 14},
-				{"steel-plate", 20},
+				{"undarl-rtg-equipment", 10},
+				{"steel-plate", 10},
 				{"copper-cable", 10},
 			},
 			result = "undarl-rtg-array"

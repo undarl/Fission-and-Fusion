@@ -17,7 +17,7 @@ data:extend(
 			},
 			shape =
 			{
-				width = 2,
+				width = 1,
 				height = 2,
 				type = "full"
 			},
@@ -26,7 +26,7 @@ data:extend(
 				type = "electric",
 				usage_priority = "primary-output"
 			},
-			power = "75kW",
+			power = "30kW",
 			categories = {"armor"}
 		},
 })

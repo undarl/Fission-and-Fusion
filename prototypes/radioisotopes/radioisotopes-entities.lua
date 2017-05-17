@@ -13,13 +13,13 @@ data:extend(
 			energy_source =
 			{
 				type = "electric",
-				buffer_capacity = "1050kJ",
+				buffer_capacity = "300kJ",
 				usage_priority = "primary-output",
 				input_flow_limit = "0kW",
-				output_flow_limit = "1050kW",
+				output_flow_limit = "300kW",
 				emissions = 0.01,
 			},
-			energy_production = "1050kW",
+			energy_production = "300kW",
 			energy_usage = "0kW",
 			picture =
 			{

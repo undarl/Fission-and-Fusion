@@ -1,24 +1,27 @@
-A full Factorio day/night cycle is 25000 ticks, ~7mins.
+Change current RTGs to 1x2 items that put out 30kW forever, change RTG array
+to require 10 of them and output 300kW.
+==DONE.
 
-Looking at degrading RTG performance by 5% per day, which would
-give them a total of around 2.3hrs of useful life.
+New Po210-style RTGs put out 80kW at 1x2 size, but lose 5% output per game day
+until they bottom out at 10% (8kW). That takes about 2 hours of play. They will
+stay there forever, or can be reprocessed for material returns.
 
-Possible settings to choose number of days per degradation.
+A full Factorio day/night cycle is 25000 ticks, ~7mins. The cycle from full to
+10% by 5% increments takes 18 days, or ~2hrs6mins real time.
 
-21 item-entity pairs: one empty, one full, 5-95% by fives.
+19 item-entity pairs: one full, 95%-10% by fives.
 
 Creation function that adds new RTGs to global table: entity, depletion state,
-ticks in state, equipmentgrid. Runs on place and place equipment events.
+ticks in state, equipmentgrid. Runs on place equipment events.
 
 Update function that runs every 60ticks/1sec and updates global
 RTG tables. If ticks are >= 25000 (or setting) then update depletion state,
 reset ticks in state, swap entity for new entity. Else increment ticks in state.
 
-Destruction function that nulls global RTG table entries. Runs on mine and
-remove equipment events.
+Destruction function that nulls global RTG table entries. Runs on remove
+equipment events.
 
-Assembler recipe to deconstruct RTG arrays into 14 RTGs and 50% or so of other
-used components.
+Assembler recipe to deconstruct RTGs into percentage of used components
+less radioisotopes. Setting-based: 0/25/50/75, default 50.
 
-Assembler recipe to deconstruct RTGs into 50% or so of used components
-less radioisotopes.
+Create alternate version of RTG graphic for Po210 units.
