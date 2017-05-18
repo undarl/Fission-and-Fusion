@@ -30,3 +30,25 @@ data:extend(
 			stack_size = 10,
 		},
 })
+
+--Generate fast RTG items
+local frtgpower = 100
+
+while frtgpower >= 10 do
+	data:extend(
+		{
+			{
+				type = "item",
+				name = "undarl-fast-rtg-equipment-" .. frtgpower,
+				localised_name = {"equipment-name.undarl-fast-rtg-equipment", frtgpower},
+				localised_description = {"item-description.undarl-fast-rtg-equipment", frtgpower},
+				icon = "__Fission and Fusion__/graphics/icons/fast-rtg.png",
+				placed_as_equipment_result = "undarl-fast-rtg-equipment-" .. frtgpower,
+				flags = {"goes-to-main-inventory"},
+				subgroup = "equipment",
+				order = "a[energy-source]-c",
+				stack_size = 10
+			}
+	})
+	frtgpower = frtgpower - 5
+end

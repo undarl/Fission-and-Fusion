@@ -35,4 +35,29 @@ if settings['startup']['undarl-enable-radioisotopes'].value then
 		table.insert(data.raw.recipe['undarl-reprocess-portable-uranium-cell'].results,
 		{name = "undarl-radioisotopes", probability = 0.50, amount = 1})
 	end
+	--Add in appropriate  fast RTG recycling recipe
+	local frtgeff = settings.startup['undarl-fast-rtg-recycling'].value
+	if frtgeff ~= "none" then
+		table.insert(data.raw.technology['undarl-radioisotopes'].effects,
+			{
+				type = "unlock-recipe",
+				recipe = "undarl-fast-rtg-recycling",
+		})
+
+		if frtgeff == "25%" then
+			data.raw.recipe['undarl-fast-rtg-recycling'].results =
+			{
+				{name = "steel-plate", amount_min = 1, amount_max = 2},
+				{name = "advanced-circuit", amount_min = 0, amount_max = 1},
+				{name = "copper-cable", amount_min = 1, amount_max = 2},
+			}
+		elseif frtgeff == "75%" then
+			data.raw.recipe['undarl-fast-rtg-recycling'].results =
+			{
+				{name = "steel-plate", amount_min = 3, amount_max = 4},
+				{name = "advanced-circuit", amount_min = 2, amount_max = 3},
+				{name = "copper-cable", amount_min = 3, amount_max = 4},
+			}
+		end
+	end
 end

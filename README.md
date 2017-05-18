@@ -11,7 +11,7 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 
 **Radioisotopes:** These non-fissionable byproducts have a chance to be returned when reprocessing any kind of nuclear fuel cells. While they aren't useful for making new fuel cells, the heat of their decay can be harnessed by RTGs.
 
-**Radioisotope Thermoelectric Generators:** Maintenance-free energy sources for equipment, powered by the heat of decaying radioisotopes. Not as efficient as reactors, but a step up from solar panels. The standard version has lower power output but will last for years; the fast version provides more power but expends most of its energy within weeks.
+**Radioisotope Thermoelectric Generators:** Maintenance-free energy sources for equipment powered by the heat of decaying radioisotopes. Not as efficient as reactors, but a step up from solar panels. The standard version has low power output but will last for decades; the fast version provides much more power initially but expends most of its energy within weeks.
 
 **Radioisotope Thermoelectric Generator Arrays:** An array of standard RTGs designed to provide factory-level power.
 
@@ -27,6 +27,11 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 
 **Magnetic Conversion Fusion Generators:** These more advanced facilities fuse deuterium gas directly, and produce electricity using direct energy conversion. They are not as powerful individually as fusion reactors, but they are somewhat smaller, more efficient, and require no other power generation infrastructure.
 
+## Changelog
+* 0.3.0 - Reduced standard RTG size by half and scaled output down by 20%; reduced RTG Array ingredients and output; added a new Fast RTG.
+* 0.2.0 - Increased default fusion reactor output by 50%; created a startup setting for reactor output; rebalanced fusion fuel recipes; removed workaround for generator heat capacity bug.
+* 0.1.0 - Initial release
+
 ## Current Integrations with Other Mods
 * [Nuclear Fuel](https://mods.factorio.com/mods/GotLag/Nuclear%20Fuel) by GotLag
   * Add radioisotope chance to plutonium fuel reprocessing
@@ -37,14 +42,6 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
   * Change heavy water hydrogen sulfide exchange recipe to use Angel's hydrogen sulfide
   * Change deuterium electrolysis recipe to use Angel's electrolysers and create oxygen as a byproduct
 
-## Changelog
-* 0.2.0 - Increased default fusion reactor output by 50%; created a startup setting for reactor output; rebalanced fusion fuel recipes; removed workaround for generator heat capacity bug.
-* 0.1.0 - Initial release
-
-## Currently Working On
-* Converting RTGs to a Polonium-210 model, wherein they deplete over game-relevant timeframes.
-  * Create entity-item pairings to represent full, partially depleted (every 5%), and fully depleted RTGs.
-  * Create a reprocessing recipe for both kinds of RTGs to get back a tithe of the used components and prevent buildup of useless depleted items.
 ## Future Possibilities
 * Upgraded graphics
   * I've started [a request thread](https://forums.factorio.com/viewtopic.php?f=15&t=46417) in the Factorio Texture Packs forum should anyone with artistic skill feel inspired.
@@ -55,12 +52,12 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 * Fusion generator self-heating logic: adapted from the diesel generator in Klonan's [KS Power](https://mods.factorio.com/mods/Klonan/KS_Power) mod.
 ## Art Attribution
 * **advanced_fusion:** cropped by Undarl under the [CC BY-SA 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/). The [original work](https://commons.wikimedia.org/w/index.php?curid=12836818) is by [Culham Centre for Fusion Energy](http://www.fusion.org.uk/MAST.aspx), CC BY-SA 3.0.
+* **fast-rtg, rtg, rtg-tech:** modified by Undarl. The [original work](https://commons.wikimedia.org/wiki/File:Cassini%27s_RTG.jpg) is a public domain image from [NASA](http://nasa.gov).
 * **fission-reactor-equipment:** modified by Undarl. The [original work](https://commons.wikimedia.org/wiki/File:Containment_destruction.jpg) is a public domain image from the [NRC](http://www.nrc.gov), and has had a public domain radiation trefoil image added to it.
 * **fusion-generator, fusion-reactor, fusion-reactor-lights, and rtg-array:** modified from artwork released for Factorio mod use by Arch666Angel on a Factorio forum [thread of discarded artwork](https://forums.factorio.com/viewtopic.php?f=15&t=40923).
 * **fusion_power:** cropped by Undarl under the [CC BY-SA 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/). The [original work](https://commons.wikimedia.org/w/index.php?curid=20512199) is by Lawrence Livermore National Laboratory - Own work, CC BY-SA 3.0.
 * **fusion-reactor-interface:** modified by Undarl under the [CC BY-SA 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/). The [original work](https://commons.wikimedia.org/wiki/File:Georgetown_PowerPlant_Museum_gauges_18.jpg) is by Joe Mabel, own work, CC BY-SA 3.0.
 * **reactor-interface-led:** borrowed from the [Reactor Interface](https://mods.factorio.com/mods/GotLag/Reactor%20Interface) mod by GotLag.
-* **rtg:** modified by Undarl. The [original work](https://commons.wikimedia.org/wiki/File:Cassini%27s_RTG.jpg) is a public domain image from [NASA](http://nasa.gov).
 * The portable fuel cell icons, their depleted variants, the deuterium pellets icon, and the temperature icon were assembled by Undarl from public domain images.
 * The gas-deuterium, liquid-heavy-water, and reprocess-portable-uranium-cell icons were created from Factorio game assets modified and combined with public domain images.
 * The radioisotopes icon is a color-shifted variant of the Factorio U-235 game asset.

@@ -1,5 +1,6 @@
-require ('scripts.fusion-generator-scripts')
+require ('scripts.fast-rtg-scripts')
 require ('scripts.fusion-reactor-scripts')
+require ('scripts.fusion-generator-scripts')
 
 global = global or {}
 global.reactors = global.reactors or {}
@@ -22,6 +23,7 @@ end)
 
 --Update reactor interface information and fusion generator temperature
 script.on_event(defines.events.on_tick, function(event)
+	if (event.tick % 600) == 0 then update_fast_rtgs() end
 	update_reactor_interfaces(event)
 	check_fusion_generators()
 end)
@@ -46,9 +48,16 @@ local function DestedEntity(event)
 	end
 end
 
+local function PlacedEquip(event)
+	if settings.startup['undarl-enable-radioisotopes'].value and string.sub(event.equipment.name, 1, 25) == "undarl-fast-rtg-equipment" then
+		place_fast_rtg(event)
+	end
+end
+
 --Event hooks
 script.on_event(defines.events.on_built_entity, BuiltEntity)
 script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
 script.on_event(defines.events.on_preplayer_mined_item, DestedEntity)
 script.on_event(defines.events.on_robot_pre_mined, DestedEntity)
 script.on_event(defines.events.on_entity_died, DestedEntity)
+script.on_event(defines.events.on_player_placed_equipment, PlacedEquip)

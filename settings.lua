@@ -23,10 +23,18 @@ data:extend(
     },
 	{
         type = "string-setting",
+        name = "undarl-fast-rtg-recycling",
+        setting_type = "startup",
+        default_value = "50%",
+		allowed_values = {"none", "25%", "50%", "75%"},
+        order = "fandf-a-d",
+    },
+	{
+        type = "string-setting",
         name = "undarl-reactor-output",
         setting_type = "startup",
         default_value = "60MW",
 		allowed_values = {"40MW", "60MW", "80MW"},
-        order = "fandf-a-d",
+        order = "fandf-a-e",
     },
 })
