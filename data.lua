@@ -9,6 +9,7 @@ end
 if settings["startup"]['undarl-enable-fusion'].value then
 	require('prototypes.fusion.fusion-fluids')
 	require('prototypes.fusion.fusion-entities')
+	require('prototypes.fusion.fusion-equipment')
 	require('prototypes.fusion.fusion-items')
 	require('prototypes.fusion.fusion-recipes')
 	require('prototypes.fusion.fusion-technologies')

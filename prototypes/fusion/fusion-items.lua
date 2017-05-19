@@ -25,8 +25,8 @@ data:extend(
 			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "intermediate-product",
-			order = "r[uranium-processing]-z",
-			fuel_category = "fusion",
+			order = "r[uranium-processing]-z-a",
+			fuel_category = "undarl-fusion",
 			--Fuel value calculated from reactor draw * 50% reactor efficiency
 			--with a desired burn rate of 1 pellet per second
 			fuel_value = PELLET_VALUE,
@@ -41,5 +41,26 @@ data:extend(
 			order = "z[fusion-power]-a[fusion-reactor]",
 			place_result = "undarl-fusion-reactor",
 			stack_size = 5
+		},
+		{
+			type = "item",
+			name = "undarl-pressure-cylinder",
+			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
+			flags = {"goes-to-quickbar"},
+			subgroup = "intermediate-product",
+			order = "d[empty-barrel]-b",
+			stack_size = 20
+		},
+		{
+			type = "item",
+			name = "undarl-deuterium-pressure-cylinder",
+			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
+			flags = {"goes-to-quickbar"},
+			subgroup = "intermediate-product",
+			order = "r[uranium-processing]-z-b",
+			fuel_category = "undarl-compressed-fusion",
+			fuel_value = "2.5GJ",
+			burnt_result = "undarl-pressure-cylinder",
+			stack_size = 20
 		},
 })

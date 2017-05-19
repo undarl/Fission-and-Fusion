@@ -7,7 +7,7 @@ data:extend(
 			flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-a[uranium-fuel-cell]-m",
-			fuel_category = "portable-nuclear",
+			fuel_category = "undarl-portable-nuclear",
 			burnt_result = "undarl-depleted-uranium-fuel-cell",
 			fuel_value = "450MJ",
 			stack_size = 60

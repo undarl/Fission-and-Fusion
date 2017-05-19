@@ -126,5 +126,50 @@ data:extend(
 			},
 			result = "undarl-fusion-generator"
 		},
+		{
+			type = "recipe",
+			name = "undarl-pressure-cylinder",
+			energy_required = 1,
+			enabled = false,
+			ingredients =
+			{
+				{type = "item", name = "steel-plate", amount = 2},
+			},
+			result = "undarl-pressure-cylinder",
+			result_count = 1
+		},
+		{
+			type = "recipe",
+			name = "undarl-deuterium-pressure-cylinder",
+			category = "crafting-with-fluid",
+			energy_required = 5,
+			enabled = false,
+			ingredients =
+			{
+				{type = "item", name = "undarl-pressure-cylinder", amount = 1},
+				{type = "fluid", name = "undarl-gas-deuterium", amount = 250},
+			},
+			result = "undarl-deuterium-pressure-cylinder",
+			result_count = 1
+		},
+		{
+			type = "recipe",
+			name = "undarl-empty-deuterium-pressure-cylinder",
+			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
+			category = "crafting-with-fluid",
+			subgroup = "intermediate-product",
+			order = "r[uranium-processing]-z-b",
+			energy_required = 5,
+			enabled = false,
+			ingredients =
+			{
+				{type = "item", name = "undarl-deuterium-pressure-cylinder", amount = 1},
+			},
+			results =
+			{
+				{type = "item", name = "undarl-pressure-cylinder", amount = 1},
+				{type = "fluid", name = "undarl-gas-deuterium", amount = 250},
+			}
+		},
 	}
 )

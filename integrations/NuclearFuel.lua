@@ -21,7 +21,7 @@ if settings['startup']['undarl-enable-fission'].value then
 				flags = {"goes-to-main-inventory"},
 				subgroup = "intermediate-product",
 				order = "r[uranium-processing]-a[uranium-fuel-cell]-n",
-				fuel_category = "portable-nuclear",
+				fuel_category = "undarl-portable-nuclear",
 				burnt_result = "undarl-depleted-breeder-fuel-cell",
 				fuel_value = "225MJ",
 				stack_size = 60

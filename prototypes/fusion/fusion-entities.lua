@@ -48,10 +48,15 @@ interface_connection =
 
 data:extend(
 	{
-		--Setup fuel category for the reactor
+		--IFE Reactor fuel
 		{
 			type = "fuel-category",
-			name = "fusion"
+			name = "undarl-fusion"
+		},
+		--Portable Reactor fuel
+		{
+			type = "fuel-category",
+			name = "undarl-compressed-fusion"
 		},
 		--Fusion reactor
 		{
@@ -65,7 +70,7 @@ data:extend(
 			consumption = settings.startup['undarl-reactor-output'].value,
 			burner =
 			{
-				fuel_category = "fusion",
+				fuel_category = "undarl-fusion",
 				effectivity = 0.5,
 				fuel_inventory_size = 1,
 			},

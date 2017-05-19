@@ -1,6 +1,6 @@
 # Fission and Fusion
 
-Adds portable fission generators, radioisotope thermoelectric generators, and factory-level fusion power as well as making portable fusion reactors much more difficult to research. Each branch of this mod can be toggled on and off individually in the mod startup options.
+Adds portable fission generators, radioisotope thermoelectric generators, and factory-level fusion power as well as altering portable fusion reactors and increasing their research difficulty. Each branch of this mod can be toggled on and off individually in the mod startup options.
 
 ## Portable Fission Power
 **Portable Nuclear Reactors:** Two-thirds the size and power output of portable fusion reactors, these run off of portable fuel cells created in much the same way as the full size fuel cells used in nuclear reactors.
@@ -27,8 +27,11 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 
 **Magnetic Conversion Fusion Generators:** These more advanced facilities fuse deuterium gas directly, and produce electricity using direct energy conversion. They are not as powerful individually as fusion reactors, but they are somewhat smaller, more efficient, and require no other power generation infrastructure.
 
+**Portable Fusion Reactors:** The pinnacle of fusion technology so far, these reactor-generator units are small enough to fit in powered armor and run very efficiently on compressed deuterium gas.
+
 ## Changelog
-* 0.3.0 - Reduced standard RTG size by half and scaled output down by 20%; reduced RTG Array ingredients and output; added a new Fast RTG.
+* 0.4.0 - Added pressure cylinders; converted portable fusion reactors to run on compressed deuterium.
+* 0.3.0 - Reduced standard RTG size by half and scaled output down by 20%; reduced RTG Array ingredients and output; added a new Fast RTG that loses capacity over time.
 * 0.2.0 - Increased default fusion reactor output by 50%; created a startup setting for reactor output; rebalanced fusion fuel recipes; removed workaround for generator heat capacity bug.
 * 0.1.0 - Initial release
 

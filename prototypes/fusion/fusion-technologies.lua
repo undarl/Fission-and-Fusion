@@ -54,6 +54,18 @@ data:extend(
 					type = "unlock-recipe",
 					recipe = "undarl-fusion-generator",
 				},
+				{
+					type = "unlock-recipe",
+					recipe = "undarl-pressure-cylinder",
+				},
+				{
+					type = "unlock-recipe",
+					recipe = "undarl-deuterium-pressure-cylinder",
+				},
+				{
+					type = "unlock-recipe",
+					recipe = "undarl-empty-deuterium-pressure-cylinder",
+				},
 
 			},
 			prerequisites = {"undarl-fusion"},

@@ -28,7 +28,7 @@ data:extend(
 			},
 			burner =
 			{
-				fuel_category = "portable-nuclear",
+				fuel_category = "undarl-portable-nuclear",
 				effectivity = 1,
 				fuel_inventory_size = 1,
 				burnt_inventory_size = 1
