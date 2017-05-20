@@ -1,4 +1,4 @@
-if settings["startup"]['undarl-enable-fission'].value then
+if settings.startup['undarl-enable-fission'].value then
 	require('prototypes.fission.fission-entities')
 	require('prototypes.fission.fission-items')
 	require('prototypes.fission.fission-recipes')
@@ -6,7 +6,7 @@ if settings["startup"]['undarl-enable-fission'].value then
 	require('prototypes.fission.fission-technologies')
 end
 
-if settings["startup"]['undarl-enable-fusion'].value then
+if settings.startup['undarl-enable-fusion'].value then
 	require('prototypes.fusion.fusion-fluids')
 	require('prototypes.fusion.fusion-entities')
 	require('prototypes.fusion.fusion-equipment')
@@ -15,7 +15,7 @@ if settings["startup"]['undarl-enable-fusion'].value then
 	require('prototypes.fusion.fusion-technologies')
 end
 
-if settings["startup"]['undarl-enable-radioisotopes'].value then
+if settings.startup['undarl-enable-radioisotopes'].value then
 	require('prototypes.radioisotopes.radioisotopes-entities')
 	require('prototypes.radioisotopes.radioisotopes-items')
 	require('prototypes.radioisotopes.radioisotopes-recipes')

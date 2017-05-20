@@ -4,12 +4,12 @@ if mods['Nuclear Fuel'] then
 end
 
 --Integrations for Angel's Petrochem
-if mods['angelspetrochem'] and settings['startup']['undarl-enable-fusion'].value then
+if mods['angelspetrochem'] and settings.startup['undarl-enable-fusion'].value then
 	require('integrations.AngelPetrochem')
 end
 
 --Add in reactor temperature signal if not already present
-if settings['startup']['undarl-enable-fusion'].value then
+if settings.startup['undarl-enable-fusion'].value then
 	if not data.raw['virtual-signal']['signal-temperature'] then
 		data:extend({
 			{

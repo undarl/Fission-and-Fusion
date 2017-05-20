@@ -1,11 +1,11 @@
 --Add radioisotope chance to breeder cell reprocessing
-if settings['startup']['undarl-enable-radioisotopes'].value then
+if settings.startup['undarl-enable-radioisotopes'].value then
 	table.insert(
 		data.raw.recipe['breeder-fuel-reprocessing'].results,
 	{name = "undarl-radioisotopes", probability = 0.5, amount = 1})
 end
 
-if settings['startup']['undarl-enable-fission'].value then
+if settings.startup['undarl-enable-fission'].value then
 	--Add plutonium chance to portable cell reprocessing
 	table.insert(
 		data.raw.recipe['undarl-reprocess-portable-uranium-cell'].results,
@@ -98,7 +98,7 @@ if settings['startup']['undarl-enable-fission'].value then
 	{type = "unlock-recipe", recipe = "undarl-portable-mox-fuel-cell"})
 
 	--Add radioisotope chance to portable breeder reprocessing
-	if settings['startup']['undarl-enable-radioisotopes'].value then
+	if settings.startup['undarl-enable-radioisotopes'].value then
 		table.insert(
 			data.raw.recipe['undarl-reprocess-portable-breeder-cell'].results,
 		{name = "undarl-radioisotopes", probability = 0.5, amount = 1})
