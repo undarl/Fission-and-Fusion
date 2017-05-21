@@ -19,13 +19,13 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 
 **Heavy Water:** Water rich in deuterium, a heavier isotope of hydrogen, it can be separated out of large amounts of normal water via distillation or hydrogen sulfide exchange in a chemical plant.
 
-**Deuterium Gas:** Gaseous deuterium, derived from heavy water via electrolysis in a chemical plant. It is used as fusion fuel -- directly by fusion generators, indirectly by fusion reactors.
+**Deuterium Gas:** Gaseous deuterium, derived from heavy water via electrolysis in a chemical plant. It is used as fusion fuel -- directly by fusion generators, indirectly by IFE reactors, and in compressed form by portable fusion reactors.
 
-**Deuterium Pellets:** Pellets of supercooled deuterium created in a chemical plant, used as fuel by fusion reactors.
+**Deuterium Pellets:** Pellets of cryogenic deuterium created in a chemical plant, used as fuel by IFE reactors.
 
-**Inertial Fusion Energy Reactors:** The first available fusion power option, these reactors fuse deuterium pellets to generate heat which is then funneled into heat exchangers and turbines in the same way as nuclear reactors. Temperature and remaining fuel data are available to the circuit network via a panel on the front of the reactor.
+**Inertial Fusion Energy Reactors:** The first available fusion power option, these reactors fuse deuterium pellets to generate heat which is then used by heat exchangers and turbines in the same way as nuclear reactors. Temperature and remaining fuel data are available to the circuit network via a panel on the front of the reactor.
 
-**Magnetic Conversion Fusion Generators:** These more advanced facilities fuse deuterium gas directly, and produce electricity using direct energy conversion. They are not as powerful individually as fusion reactors, but they are somewhat smaller, more efficient, and require no other power generation infrastructure.
+**Magnetic Conversion Fusion Generators:** These more advanced facilities fuse deuterium gas directly, and produce electricity using direct energy conversion. They are not as powerful individually as IFE reactors, but they are somewhat smaller, more efficient, and require no other power generation infrastructure.
 
 **Portable Fusion Reactors:** The pinnacle of fusion technology so far, these reactor-generator units are small enough to fit in powered armor and run very efficiently on compressed deuterium gas.
 

@@ -45,22 +45,22 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-pressure-cylinder",
-			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
+			icon = "__Fission and Fusion__/graphics/icons/pressure-cylinder.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "intermediate-product",
 			order = "d[empty-barrel]-b",
-			stack_size = 20
+			stack_size = 30
 		},
 		{
 			type = "item",
 			name = "undarl-deuterium-pressure-cylinder",
-			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
+			icon = "__Fission and Fusion__/graphics/icons/deuterium-pressure-cylinder.png",
 			flags = {"goes-to-quickbar"},
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-z-b",
 			fuel_category = "undarl-compressed-fusion",
 			fuel_value = "2.5GJ",
 			burnt_result = "undarl-pressure-cylinder",
-			stack_size = 20
+			stack_size = 30
 		},
 })

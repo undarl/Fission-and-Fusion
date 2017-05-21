@@ -155,7 +155,7 @@ data:extend(
 		{
 			type = "recipe",
 			name = "undarl-empty-deuterium-pressure-cylinder",
-			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
+			icon = "__Fission and Fusion__/graphics/icons/empty-deuterium-pressure-cylinder.png",
 			category = "crafting-with-fluid",
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-z-b",
