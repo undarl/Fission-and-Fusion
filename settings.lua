@@ -31,10 +31,18 @@ data:extend(
     },
 	{
         type = "string-setting",
+        name = "undarl-fast-rtg-recycling-facility",
+        setting_type = "startup",
+        default_value = "chem plant",
+		allowed_values = {"chem plant", "centrifuge"},
+        order = "fandf-a-e",
+    },
+	{
+        type = "string-setting",
         name = "undarl-reactor-output",
         setting_type = "startup",
         default_value = "60MW",
 		allowed_values = {"40MW", "60MW", "80MW"},
-        order = "fandf-a-e",
+        order = "fandf-a-f",
     },
 })

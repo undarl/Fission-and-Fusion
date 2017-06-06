@@ -30,6 +30,7 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 **Portable Fusion Reactors:** The pinnacle of fusion technology so far, these reactor-generator units are small enough to fit in powered armor and run very efficiently on compressed deuterium gas.
 
 ## Changelog
+* 0.4.1 - Shifted fast RTG recycling to chemplants to fix a handcrafting bug; added a setting to shift it to centrifuges instead.
 * 0.4.0 - Added pressure cylinders; converted portable fusion reactors to run on compressed deuterium.
 * 0.3.0 - Reduced standard RTG size by half and scaled output down by 20%; reduced RTG Array ingredients and output; added a new Fast RTG that loses capacity over time.
 * 0.2.0 - Increased default fusion reactor output by 50%; created a startup setting for reactor output; rebalanced fusion fuel recipes; removed workaround for generator heat capacity bug.
@@ -62,7 +63,7 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 * **fusion-reactor-interface:** modified by Undarl under the [CC BY-SA 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/). The [original work](https://commons.wikimedia.org/wiki/File:Georgetown_PowerPlant_Museum_gauges_18.jpg) is by Joe Mabel, own work, CC BY-SA 3.0.
 * **reactor-interface-led:** borrowed from the [Reactor Interface](https://mods.factorio.com/mods/GotLag/Reactor%20Interface) mod by GotLag.
 * The portable fuel cell icons, their depleted variants, the deuterium pellets icon, and the temperature icon were assembled by Undarl from public domain images.
-* The gas-deuterium, liquid-heavy-water, and reprocess-portable-uranium-cell icons were created from Factorio game assets modified and combined with public domain images.
+* The gas-deuterium, liquid-heavy-water, pressure-cylinder, and reprocess-portable-uranium-cell icons were created from Factorio game assets modified and combined with public domain images.
 * The radioisotopes icon is a color-shifted variant of the Factorio U-235 game asset.
 * The reprocess-portable-breeder-cell icon was assembled by Undarl from public domain images and the plutonium icon graphic from GotLag's [Nuclear Fuel](https://mods.factorio.com/mods/GotLag/Nuclear%20Fuel) mod.
 ## Other Credits and Thanks

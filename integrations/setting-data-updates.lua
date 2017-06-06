@@ -60,4 +60,8 @@ if settings.startup['undarl-enable-radioisotopes'].value then
 			}
 		end
 	end
+	--Change fast RTG recycling building type if necessary
+	if settings.startup['undarl-fast-rtg-recycling-facility'].value == "centrifuge" then
+		data.raw.recipe['undarl-fast-rtg-recycling'].category = "centrifuging"
+	end
 end
