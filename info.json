@@ -9,6 +9,6 @@
 		"?angelspetrochem >= 0.5.2"
 	],
 	"description": "Adds portable fission generators, radioisotope thermoelectric generators, and factory-level fusion power.",
-	"factorio_version": "0.15",
+	"factorio_version": "0.16",
 	"homepage": ""
 }
