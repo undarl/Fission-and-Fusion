@@ -57,7 +57,7 @@ end
 --Event hooks
 script.on_event(defines.events.on_built_entity, BuiltEntity)
 script.on_event(defines.events.on_robot_built_entity, BuiltEntity)
-script.on_event(defines.events.on_preplayer_mined_item, DestedEntity)
+script.on_event(defines.events.on_pre_player_mined_item, DestedEntity)
 script.on_event(defines.events.on_robot_pre_mined, DestedEntity)
 script.on_event(defines.events.on_entity_died, DestedEntity)
 script.on_event(defines.events.on_player_placed_equipment, PlacedEquip)

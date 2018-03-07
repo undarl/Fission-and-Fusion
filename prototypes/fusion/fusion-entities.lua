@@ -63,6 +63,7 @@ data:extend(
 			type = "reactor",
 			name = "undarl-fusion-reactor",
 			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
+			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {hardness = 0.2, mining_time = 0.5, result = "undarl-fusion-reactor"},
 			max_health = 500,
@@ -261,6 +262,7 @@ data:extend(
 			type = "generator",
 			name = "undarl-fusion-generator",
 			icon = "__Fission and Fusion__/graphics/icons/fusion-generator.png",
+			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {mining_time = 1, result = "undarl-fusion-generator"},
 			max_health = 300,
@@ -282,7 +284,8 @@ data:extend(
 					{ type = "input", position = {0.5, 1.5} },
 					{ type = "input", position = {0.5, - 1.5} },
 				},
-				production_type = "input"
+				production_type = "input",
+				filter = "undarl-gas-deuterium"
 			},
 			fluid_input =
 			{

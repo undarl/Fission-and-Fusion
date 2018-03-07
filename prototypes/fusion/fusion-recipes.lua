@@ -25,6 +25,7 @@ data:extend(
 			},
 			main_product = "",
 			icon = "__Fission and Fusion__/graphics/icons/liquid-heavy-water.png",
+			icon_size = 32,
 			subgroup = "fluid-recipes",
 			order = "b[fluid-chemistry]-y",
 			crafting_machine_tint =
@@ -51,6 +52,7 @@ data:extend(
 			},
 			main_product = "",
 			icon = "__Fission and Fusion__/graphics/icons/liquid-heavy-water.png",
+			icon_size = 32,
 			subgroup = "fluid-recipes",
 			order = "b[fluid-chemistry]-y",
 			crafting_machine_tint =
@@ -76,6 +78,7 @@ data:extend(
 			},
 			main_product = "",
 			icon = "__Fission and Fusion__/graphics/icons/gas-deuterium.png",
+			icon_size = 32,
 			subgroup = "fluid-recipes",
 			order = "b[fluid-chemistry]-z",
 			crafting_machine_tint =
@@ -156,6 +159,7 @@ data:extend(
 			type = "recipe",
 			name = "undarl-empty-deuterium-pressure-cylinder",
 			icon = "__Fission and Fusion__/graphics/icons/empty-deuterium-pressure-cylinder.png",
+			icon_size = 32,
 			category = "crafting-with-fluid",
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-z-b",
