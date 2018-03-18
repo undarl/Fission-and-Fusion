@@ -19,6 +19,7 @@ data:extend(
 				input_flow_limit = "0kW",
 				output_flow_limit = "300kW",
 				emissions = 0.01,
+				render_no_power_icon = false,
 			},
 			energy_production = "300kW",
 			energy_usage = "0kW",
