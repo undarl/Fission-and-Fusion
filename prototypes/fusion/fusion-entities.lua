@@ -69,8 +69,9 @@ data:extend(
 			max_health = 500,
 			corpse = "big-remnants",
 			consumption = settings.startup['undarl-reactor-output'].value,
-			burner =
+			energy_source =
 			{
+				type = "burner",
 				fuel_category = "undarl-fusion",
 				effectivity = 0.5,
 				fuel_inventory_size = 1,

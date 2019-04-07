@@ -1,0 +1,56 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 07. 04. 2019
+
+  Changes:
+    - reformatted changelog
+    - Updated for 0.17
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 01. 03. 2018
+
+  Changes:
+    - Merged a pull request from the helpful vctgross which patched some files for 0.16.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 01. 07. 2017
+
+  Bugfixes:
+    - Shifted fast RTG recycling to chemplants to fix a handcrafting bug
+    - added a setting to shift it to centrifuges instead.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 04. 06. 2017
+
+  Changes:
+    - Added pressure cylinders
+    - converted portable fusion reactors to run on compressed deuterium.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 03. 06. 2017
+
+  Changes:
+    - Reduced standard RTG size by half and scaled output down by 20%
+    - reduced RTG Array ingredients and output
+    - added a new Fast RTG that loses capacity over time.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 02. 06. 2017
+
+  Changes:
+    - Increased default fusion reactor output by 50%
+    - Created a startup setting for reactor output
+    - Rebalanced fusion fuel recipes
+    - Removed workaround for generator heat capacity bug.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 01. 06. 2017
+
+  Changes:
+    - Initial release.

@@ -5,7 +5,6 @@ data:extend(
 			name = "undarl-radioisotopes",
 			icon = "__Fission and Fusion__/graphics/icons/radioisotopes.png",
 			icon_size = 32,
-			flags = {"goes-to-main-inventory"},
 			subgroup = "intermediate-product",
 			order = "h",
 			stack_size = 100
@@ -16,7 +15,6 @@ data:extend(
 			icon = "__Fission and Fusion__/graphics/icons/rtg.png",
 			icon_size = 32,
 			placed_as_equipment_result = "undarl-rtg-equipment",
-			flags = {"goes-to-main-inventory"},
 			subgroup = "equipment",
 			order = "a[energy-source]-c",
 			stack_size = 10
@@ -26,7 +24,6 @@ data:extend(
 			name = "undarl-rtg-array",
 			icon = "__Fission and Fusion__/graphics/icons/rtg-array.png",
 			icon_size = 32,
-			flags = {"goes-to-quickbar"},
 			subgroup = "energy",
 			order = "y[radioisotopes]-a[rtg-array]",
 			place_result = "undarl-rtg-array",
@@ -48,7 +45,6 @@ while frtgpower >= 10 do
 				icon = "__Fission and Fusion__/graphics/icons/fast-rtg.png",
 			icon_size = 32,
 				placed_as_equipment_result = "undarl-fast-rtg-equipment-" .. frtgpower,
-				flags = {"goes-to-main-inventory"},
 				subgroup = "equipment",
 				order = "a[energy-source]-c",
 				stack_size = 10

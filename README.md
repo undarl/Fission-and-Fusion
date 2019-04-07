@@ -29,14 +29,6 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 
 **Portable Fusion Reactors:** The pinnacle of fusion technology so far, these reactor-generator units are small enough to fit in powered armor and run very efficiently on compressed deuterium gas.
 
-## Changelog
-* 0.4.2 - Merged a pull request from the helpful vctgross which patched some files for 0.16.
-* 0.4.1 - Shifted fast RTG recycling to chemplants to fix a handcrafting bug; added a setting to shift it to centrifuges instead.
-* 0.4.0 - Added pressure cylinders; converted portable fusion reactors to run on compressed deuterium.
-* 0.3.0 - Reduced standard RTG size by half and scaled output down by 20%; reduced RTG Array ingredients and output; added a new Fast RTG that loses capacity over time.
-* 0.2.0 - Increased default fusion reactor output by 50%; created a startup setting for reactor output; rebalanced fusion fuel recipes; removed workaround for generator heat capacity bug.
-* 0.1.0 - Initial release
-
 ## Current Integrations with Other Mods
 * [Nuclear Fuel](https://mods.factorio.com/mods/GotLag/Nuclear%20Fuel) by GotLag
   * Add radioisotope chance to plutonium fuel reprocessing

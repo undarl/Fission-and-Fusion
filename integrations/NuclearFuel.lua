@@ -19,7 +19,6 @@ if settings.startup['undarl-enable-fission'].value then
 				name = "undarl-portable-breeder-fuel-cell",
 				icon = "__Fission and Fusion__/graphics/icons/portable-breeder-fuel-cell.png",
 				icon_size = 32,
-				flags = {"goes-to-main-inventory"},
 				subgroup = "intermediate-product",
 				order = "r[uranium-processing]-a[uranium-fuel-cell]-n",
 				fuel_category = "undarl-portable-nuclear",
@@ -32,7 +31,6 @@ if settings.startup['undarl-enable-fission'].value then
 				name = "undarl-depleted-breeder-fuel-cell",
 				icon = "__Fission and Fusion__/graphics/icons/depleted-breeder-fuel-cell.png",
 				icon_size = 32,
-				flags = {"goes-to-main-inventory"},
 				subgroup = "intermediate-product",
 				stack_size = 60
 			},
