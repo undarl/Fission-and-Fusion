@@ -1,7 +1,9 @@
+local intermediate_recipes = {}
+
 if settings.startup['undarl-enable-fission'].value then
 	require('prototypes.fission.fission-entities')
 	require('prototypes.fission.fission-items')
-	require('prototypes.fission.fission-recipes')
+	require('prototypes.fission.fission-recipes').collect_intermediate_recipes(intermediate_recipes)
 	require('prototypes.fission.fission-equipment')
 	require('prototypes.fission.fission-technologies')
 end
@@ -11,7 +13,7 @@ if settings.startup['undarl-enable-fusion'].value then
 	require('prototypes.fusion.fusion-entities')
 	require('prototypes.fusion.fusion-equipment')
 	require('prototypes.fusion.fusion-items')
-	require('prototypes.fusion.fusion-recipes')
+	require('prototypes.fusion.fusion-recipes').collect_intermediate_recipes(intermediate_recipes)
 	require('prototypes.fusion.fusion-technologies')
 end
 
@@ -25,3 +27,17 @@ end
 
 --Changes to techs and recipes based on enabled settings
 require('integrations.setting-data-updates')
+
+-- add intermediate_recipes to productivity modules
+
+for _, module in pairs(data.raw["module"]) do
+  local module_effect = module.effect
+  local productivity_effect = module_effect["productivity"]
+  if not productivity_effect then goto next_module end
+  local limitation = module.limitation
+  if not limitation then goto next_module end
+  for recipe_name in pairs(intermediate_recipes) do
+    table.insert(limitation, recipe_name)
+  end
+  ::next_module::
+end

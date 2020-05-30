@@ -1,3 +1,5 @@
+[Fission and Fusion](https://mods.factorio.com/mod/Fission%20and%20Fusion) updated for 0.18 until [undarl](https://mods.factorio.com/user/undarl) gets a [round tuit](https://en.wiktionary.org/wiki/round_tuit).
+
 # Fission and Fusion
 
 Adds portable fission generators, radioisotope thermoelectric generators, and factory-level fusion power as well as altering portable fusion reactors and increasing their research difficulty. Each branch of this mod can be toggled on and off individually in the mod startup options.

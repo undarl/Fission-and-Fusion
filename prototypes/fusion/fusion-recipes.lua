@@ -165,6 +165,7 @@ data:extend(
 			order = "r[uranium-processing]-z-b",
 			energy_required = 5,
 			enabled = false,
+			allow_decomposition = false,
 			ingredients =
 			{
 				{type = "item", name = "undarl-deuterium-pressure-cylinder", amount = 1},
@@ -177,3 +178,16 @@ data:extend(
 		},
 	}
 )
+
+return {
+	collect_intermediate_recipes = function (intermediate_recipes)
+		if settings.startup['undarl-enable-fusion-productivity'].value then
+			-- these are technically all intermediate recipes, but deuterium is probably cheap enough already...
+			intermediate_recipes["undarl-distill-heavy-water"] = true
+			intermediate_recipes["undarl-heavy-water-h2s-exchange"] = true
+			intermediate_recipes["undarl-make-deuterium"] = true
+			intermediate_recipes["undarl-deuterium-pellets"] = true
+		end
+		intermediate_recipes["undarl-pressure-cylinder"] = true
+	end
+}

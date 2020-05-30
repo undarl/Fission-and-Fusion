@@ -81,18 +81,33 @@ data:extend(
 
 			lower_layer_picture = {
 				filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
-				width = 160,
-				height = 160,
-				shift = { - 0.03125, - 0.1875 },
+				width = 156,
+				height = 156,
+				shift = util.by_pixel(-2, -4),
 				hr_version =
 				{
 					filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes.png",
 					width = 320,
-					height = 320,
+					height = 316,
 					scale = 0.5,
-					shift = { - 0.03125, - 0.1875 },
+					shift = util.by_pixel(-1, -5),
 				}
 			},
+			heat_lower_layer_picture =
+	    {
+	      filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes-heated.png",
+	      width = 156,
+	      height = 156,
+	      shift = util.by_pixel(-3, -4),
+	      hr_version =
+	      {
+	        filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes-heated.png",
+	        width = 320,
+	        height = 316,
+	        scale = 0.5,
+	        shift = util.by_pixel(-0.5, -4.5),
+	      }
+	    },
 
 			picture =
 			{
@@ -173,7 +188,16 @@ data:extend(
 						position = { - 2, - 2},
 						direction = defines.direction.west
 					}
-				}
+				},
+				heat_glow =
+	      {
+	        filename = "__base__/graphics/entity/nuclear-reactor/reactor-heat-glow.png",
+	        priority = "extra-high",
+	        width = 188,
+	        height = 190,
+	        tint = heat_glow_tint,
+	        shift = util.by_pixel(-2, -4)
+	      }
 			},
 
 			connection_patches_connected =
@@ -248,6 +272,46 @@ data:extend(
 				}
 			},
 
+			heat_connection_patches_connected =
+	    {
+	      sheet =
+	      {
+	        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+	        width = 32,
+	        height = 32,
+	        variation_count = 12,
+	        hr_version =
+	        {
+	          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+	          width = 64,
+	          height = 64,
+	          variation_count = 12,
+	          scale = 0.5
+	        }
+	      }
+	    },
+
+	    heat_connection_patches_disconnected =
+	    {
+	      sheet =
+	      {
+	        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+	        width = 32,
+	        height = 32,
+	        variation_count = 12,
+	        y = 32,
+	        hr_version =
+	        {
+	          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+	          width = 64,
+	          height = 64,
+	          variation_count = 12,
+	          y = 64,
+	          scale = 0.5
+	        }
+	      }
+	    },
+
 			vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 			working_sound =
 			{
@@ -270,7 +334,7 @@ data:extend(
 			corpse = "big-remnants",
 			dying_explosion = "medium-explosion",
 			effectivity = 1,
-			fluid_usage_per_tick = 0.017, --About 1 gas per second
+			fluid_usage_per_tick = 1 / 60, -- 1 gas per second
 			maximum_temperature = 20,
 			collision_box = {{ - 0.9, - 0.9}, {0.9, 0.9}},
 			selection_box = {{ - 1, - 1}, {1, 1}},

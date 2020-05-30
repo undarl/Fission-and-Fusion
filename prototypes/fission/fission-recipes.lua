@@ -50,3 +50,9 @@ data:extend(
 			result = "undarl-fission-reactor-equipment",
 		},
 })
+
+return {
+	collect_intermediate_recipes = function (intermediate_recipes)
+		intermediate_recipes["undarl-portable-uranium-fuel-cell"] = true
+	end
+}

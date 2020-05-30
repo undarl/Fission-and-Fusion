@@ -105,3 +105,12 @@ if settings.startup['undarl-enable-fission'].value then
 		{name = "undarl-radioisotopes", probability = 0.5, amount = 1})
 	end
 end
+
+return {
+	collect_intermediate_recipes = function (intermediate_recipes)
+		if settings.startup['undarl-enable-fission'].value then
+			intermediate_recipes["undarl-portable-breeder-fuel-cell"] = true
+			intermediate_recipes["undarl-portable-mox-fuel-cell"] = true
+		end
+	end
+}

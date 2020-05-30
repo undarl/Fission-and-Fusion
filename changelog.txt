@@ -1,6 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 2020-05-26
+
+  Changes:
+    - Updated for 0.18
+    - Added glow from base nuclear reactor to the inertial confinement reactor
+    - Added name for fuel categories as these are now displayed.
+    - Rewrote control.lua to hopefully perform better.
+    - Allowed certain recipes to use productivity.
+    - Allow fusion reactor interface update to be disabled.
+  Bugfixes:
+    - Flagged RTG recycling and pressure cylinder unload recipes to not allow decomposition
+
+---------------------------------------------------------------------------------------------------
 Version: 0.4.3
-Date: 07. 04. 2019
+Date: 2019-04-07
 
   Changes:
     - reformatted changelog
@@ -8,14 +22,14 @@ Date: 07. 04. 2019
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.2
-Date: 01. 03. 2018
+Date: 2018-03-01
 
   Changes:
     - Merged a pull request from the helpful vctgross which patched some files for 0.16.
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.1
-Date: 01. 07. 2017
+Date: 2017-07-01
 
   Bugfixes:
     - Shifted fast RTG recycling to chemplants to fix a handcrafting bug
@@ -23,7 +37,7 @@ Date: 01. 07. 2017
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
-Date: 04. 06. 2017
+Date: 2017-06-04
 
   Changes:
     - Added pressure cylinders
@@ -31,7 +45,7 @@ Date: 04. 06. 2017
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
-Date: 03. 06. 2017
+Date: 2017-06-03
 
   Changes:
     - Reduced standard RTG size by half and scaled output down by 20%
@@ -40,7 +54,7 @@ Date: 03. 06. 2017
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
-Date: 02. 06. 2017
+Date: 2017-06-02
 
   Changes:
     - Increased default fusion reactor output by 50%
@@ -50,7 +64,7 @@ Date: 02. 06. 2017
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 01. 06. 2017
+Date: 2017-06-01
 
   Changes:
     - Initial release.

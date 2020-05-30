@@ -40,6 +40,7 @@ data:extend(
 			order = "a[energy-source]-c",
 			energy_required = 30,
 			enabled = false,
+			allow_decomposition = false,
 			ingredients =
 			{
 				{"undarl-fast-rtg-equipment-10", 1},
