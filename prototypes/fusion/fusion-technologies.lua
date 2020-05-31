@@ -28,7 +28,10 @@ data:extend(
 					recipe = "undarl-fusion-reactor",
 				}
 			},
-			prerequisites = {"nuclear-power"},
+			prerequisites = {
+				"nuclear-power",
+				"space-science-pack"
+			},
 			unit =
 			{
 				count = 1000,

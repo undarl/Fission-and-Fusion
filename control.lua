@@ -19,12 +19,8 @@ end
 
 require ('scripts.fast-rtg-scripts')
 require ('scripts.fusion-reactor-scripts')
-require ('scripts.fusion-generator-scripts')
 
 function on_init()
-  global.fusion_gens = {
-    next = 1
-  }
   global.fastrtgs = {
     next = 1
   }
@@ -70,26 +66,15 @@ function migrate_old_global(old_global)
 
   recalculate_rtg_update_rate(fastrtgs)
 
-
-  -- ensure that fusion_gens is an array.
-  -- calculate update rate
-  local old_fusion_gens = old_global.fusion_gens
-  local fusion_gens = global.fusion_gens
-
-  old_fusion_gens.gens_per_update = nil
-  old_fusion_gens.next = nil
-  old_fusion_gens.ticks_per_update = nil
-
-  local last_rtg_update_tick = game.tick % 600
-
-  if old_fusion_gens then
-    for k, generator in pairs(old_fusion_gens) do
-      fusion_gens[#fusion_gens + 1] = generator
+  -- reset temperature to 15, given that we're burning fluid, rather than fiddling with fluid temperature.
+  local fusion_gens = old_global.fusion_gens
+  for k,generator in pairs(fusion_gens) do
+    if type(generator) == 'table' then
+      local fluid = generator[1]
+      fluid.temperature = 15
+      generator[1] = fluid
     end
   end
-
-  recalculate_fusion_gen_update_rate(fusion_gens)
-
 
   -- ensure that global.reactors is an array
   -- reduce the size of the global data structure by referencing the same SIGNAL_TEMP and SIGNAL_FUEL_AVAILABLE everywhere
@@ -146,14 +131,10 @@ local on_tick
 if RTG_ENABLED and FUSION_ENABLED then
   on_tick = function (event)
     update_fast_rtgs(event)
-    update_fusion_generators(event)
     update_reactor_interfaces(event)
   end
 elseif FUSION_ENABLED then
-  on_tick = function(event)
-    update_fusion_generators(event)
-    update_reactor_interfaces(event)
-  end
+  on_tick = update_reactor_interfaces(event)
 elseif RTG_ENABLED then
   on_tick = update_fast_rtgs
 end
@@ -179,43 +160,20 @@ local function register_events(events, handler, filters)
 end
 
 if FUSION_ENABLED then
-  local fusion_filters = {
+  local fusion_reactor_filter = {
     {
       filter = "name",
       name = "undarl-fusion-reactor"
-    },
-    {
-      filter = "name",
-      name = "undarl-fusion-generator"
     }
   }
-
-  function on_new_fusion_thing(entity)
-    local entity_name = entity.name
-    if entity_name == "undarl-fusion-generator" then
-      placed_fusion_generator(entity)
-    elseif entity_name == "undarl-fusion-reactor" then
-      add_interface(entity)
-    end
-  end
-
-  function on_created_fusion_thing(event)
-    local entity = event.created_entity
-    on_new_fusion_thing(entity)
-  end
-
-  function on_built_fusion_thing(event)
-    local entity = event.entity
-    on_new_fusion_thing(entity)
-  end
 
   register_events(
     {
       defines_events.on_built_entity,
       defines_events.on_robot_built_entity,
     },
-    on_created_fusion_thing,
-    fusion_filters
+    function (event) add_interface(event.created_entity) end,
+    fusion_reactor_filter
   )
 
   local script_raised_create_events = {
@@ -226,22 +184,20 @@ if FUSION_ENABLED then
   if SCRIPT_RAISED_HAS_FILTER then
     register_events(
       script_raised_create_events,
-      on_built_fusion_thing,
-      fusion_filters
+      function (event) add_interface(event.entity) end,
+      fusion_reactor_filter
     )
   else
     register_events(
       script_raised_create_events,
-      on_built_fusion_thing
+      function (event)
+        local entity = event.entity
+        if entity_name == "undarl-fusion-reactor" then
+          add_interface(entity)
+        end
+      end
     )
   end
-
-  local fusion_reactor_filter = {
-    {
-      filter = "name",
-      name = "undarl-fusion-reactor"
-    }
-  }
 
   local remove_interface_event = function(event) remove_interface(event.entity) end
 

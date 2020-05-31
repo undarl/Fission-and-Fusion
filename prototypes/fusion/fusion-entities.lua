@@ -117,7 +117,7 @@ data:extend(
 						filename = "__Fission and Fusion__/graphics/fusion-reactor.png",
 						width = 160,
 						height = 160,
-						shift = { - 0.03125, - 0.1875 },
+						shift = util.by_pixel(10, 0)
 					},
 				}
 			},
@@ -127,8 +127,8 @@ data:extend(
 				filename = "__Fission and Fusion__/graphics/fusion-reactor-lights.png",
 				width = 160,
 				height = 160,
-				shift = { - 0.03125, - 0.1875 },
-				blend_mode = "additive",
+				shift = util.by_pixel(9, 2),
+				blend_mode = "additive"
 			},
 
 			light = {intensity = 0.6, size = 9.9, shift = {0.0, 0.0}, color = {r = 0.0, g = 1.0, b = 0.0}},
@@ -333,23 +333,25 @@ data:extend(
 			max_health = 300,
 			corpse = "big-remnants",
 			dying_explosion = "medium-explosion",
-			effectivity = 1,
+			effectivity = 10000000 / 6.2392, -- 10MJ / 6.2392J
 			fluid_usage_per_tick = 1 / 60, -- 1 gas per second
-			maximum_temperature = 20,
+			maximum_temperature = 15,
+			burns_fluid = true,
+			max_power_output = "10MW",
 			collision_box = {{ - 0.9, - 0.9}, {0.9, 0.9}},
 			selection_box = {{ - 1, - 1}, {1, 1}},
 			fluid_box =
 			{
 				base_area = 1,
-				--height = 2,
-				base_level = -1,
+				height = 1,
+				base_level = -0.5,
 				pipe_covers = pipecoverspictures(),
 				pipe_connections =
 				{
-					{ type = "input", position = {0.5, 1.5} },
-					{ type = "input", position = {0.5, - 1.5} },
+					{ type = "input-output", position = {0.5, 1.5} },
+					{ type = "input-output", position = {0.5, - 1.5} },
 				},
-				production_type = "input",
+				production_type = "input-output",
 				filter = "undarl-gas-deuterium"
 			},
 			fluid_input =

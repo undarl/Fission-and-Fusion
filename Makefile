@@ -62,9 +62,8 @@ verify:
 install_mod: package
 	if [ -d $(FACTORIO_MODS) ]; then \
 		rm -rf $(FACTORIO_MODS)/$(OUTPUT_NAME) ; \
-		rm -f $(FACTORIO_MODS)/"Fission and Fusion_0.4.4.zip" ; \
 		cp -R build/$(OUTPUT_NAME) $(FACTORIO_MODS) ; \
-		cp build/$(OUTPUT_NAME)/"Fission and Fusion_0.4.4.zip" $(FACTORIO_MODS) ; \
+		cp -f build/$(OUTPUT_NAME)/"Fission and Fusion_0.4.4.zip" $(FACTORIO_MODS) ; \
 	fi;
 
 tag:

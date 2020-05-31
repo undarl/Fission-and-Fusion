@@ -1,10 +1,17 @@
 Reactor: 40MW at 50% eff and 1 pellet/s req 80MJ pellets
          60MW at 50% eff and 1 pellet/s req 120MJ pellets
 		 80MW at 50% eff and 1 pellet/s req 160MJ pellets
-MagConv Gen: 10MW at 100% eff, 1 gas/s, temp 20 req 2MJ gas heat capacity
-Value per gas at temp 20 = 10MJ
+MagConv Gen: 10MW at 100% eff, 1 gas/s
 
-10MJ / 225 million MJ/Kg = 44.4 micrograms / unit.
+10MJ / 225 million MJ/kg = 44.4 micrograms / unit.
+D2 at STP is 0.180 kg/m^3
+44.4 micrograms of D2 at STP is 0.247 mL
+1 unit of fluid is 100mL
+Ideally, we need to reduce the amount of fluid by a factor of 405 to represent D2 accurately.
+
+When burnt, H2 provides 141.8 MJ/kg
+10MJ of D2 yields 6.32392J when burnt as regular fuel.
+
 
 80MJ pellet  <-  8 gas (80 ->10) 355 micrograms
 120Mj pellet <- 12 gas (120->10) 533 micrograms

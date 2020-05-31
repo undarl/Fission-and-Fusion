@@ -1,14 +1,36 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.4.4
-Date: 2020-05-26
+Version: 0.4.5
+Date: 2020-05-31
 
+  Features:
+    - Make fusion generators input-output, just like the vanilla steam generators.
+  Changes:
+    - Add an explicit dependency from the fusion power technology on space science packs
+    - Deuterium gas now has a fuel value of 6.2392J (what you would get if you just set it on fire), and fusion generators are now highly efficient (the difference between fusing and burning Deuterium).
+    - Reduced collision box on RTG to match sprite.
+  Optimisation:
+    - no longer requires control.lua to make the fusion generators work.
+  Graphics:
+    - improve the alignment of entity sprites for RTG and fusion reactor.
+  Bugfixes:
+    - Hide no power icon for RTG - thanks to baslr
+    - Updated old changelog entries
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 2020-05-31
+
+  Features:
+    - Allowed certain recipes to use productivity.
   Changes:
     - Updated for 0.18
     - Renamed from "Fission and Fusion" to "Fission-and-Fusion", and wrote a helper to migrate the data from the old to the new name.
-    - Added glow from base nuclear reactor to the inertial confinement reactor
+  Translation:
     - Added name for fuel categories as these are now displayed.
+  Graphics:
+    - Added glow from base nuclear reactor to the inertial confinement reactor
+  Optimisation:
     - Rewrote control.lua to hopefully perform better.
-    - Allowed certain recipes to use productivity.
     - Allow fusion reactor interface update to be disabled.
   Bugfixes:
     - Flagged RTG recycling and pressure cylinder unload recipes to not allow decomposition
@@ -18,8 +40,10 @@ Version: 0.4.3
 Date: 2019-04-07
 
   Changes:
-    - reformatted changelog
     - Updated for 0.17
+    - Reformatted changelog
+    - Removed quickbar flags
+    - Changed science pack names
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.2
