@@ -41,8 +41,93 @@ function on_init()
   global.SIGNAL_FUEL_AVAILABLE = {type = "item", name = "undarl-deuterium-pellets"}
 end
 
+function migrate_old_global(old_global)
+  log("Migrating global from Fission and Fusion to Fission-and-Fusion...")
+  log('global from "Fission and Fusion" (old):')
+  log(serpent.block(old_global))
+  log("global from 'Fisson-and-Fusion' (new):")
+  log(serpent.block(global))
+  -- ensure that global.fastrtgs is an array.
+  -- populate last_tick with the last update tick under the old scheme.
+  -- calculate update rate
+  local old_fastrtgs = old_global.fastrtgs
+  local fastrtgs = global.fastrtgs
+
+  local last_rtg_update_tick = game.tick % 600
+
+  old_fastrtgs.next = nil
+  old_fastrtgs.rtgs_per_update = nil
+  old_fastrtgs.ticks_per_update = nil
+
+  if old_fastrtgs then
+    for k, rtg in pairs(old_fastrtgs) do
+      if not rtg.last_tick then
+        rtg.last_tick = last_rtg_update_tick
+      end
+      fastrtgs[#fastrtgs + 1] = rtg
+    end
+  end
+
+  recalculate_rtg_update_rate(fastrtgs)
+
+
+  -- ensure that fusion_gens is an array.
+  -- calculate update rate
+  local old_fusion_gens = old_global.fusion_gens
+  local fusion_gens = global.fusion_gens
+
+  old_fusion_gens.gens_per_update = nil
+  old_fusion_gens.next = nil
+  old_fusion_gens.ticks_per_update = nil
+
+  local last_rtg_update_tick = game.tick % 600
+
+  if old_fusion_gens then
+    for k, generator in pairs(old_fusion_gens) do
+      fusion_gens[#fusion_gens + 1] = generator
+    end
+  end
+
+  recalculate_fusion_gen_update_rate(fusion_gens)
+
+
+  -- ensure that global.reactors is an array
+  -- reduce the size of the global data structure by referencing the same SIGNAL_TEMP and SIGNAL_FUEL_AVAILABLE everywhere
+  local old_reactors = old_global.reactors
+  local reactors = global.reactors
+  local reactor_index = global.reactor_index
+
+  local SIGNAL_TEMP = global.SIGNAL_TEMP
+  local SIGNAL_FUEL_AVAILABLE = global.SIGNAL_FUEL_AVAILABLE
+
+  if old_reactors then
+    for k, reactor in pairs(old_reactors) do
+      local parameters = reactor.signals.parameters
+      local unit_number = reactor.id
+      reactor.id = nil
+      reactor.unit_number = unit_number
+      reactor.inventory = reactor.entity.burner.inventory
+      parameters.temp.signal = SIGNAL_TEMP
+      parameters.fuel.signal = SIGNAL_FUEL_AVAILABLE
+      reactors[#reactors + 1] = reactor
+      reactor_index[unit_number] = #reactors
+    end
+  end
+
+  remote.call("Fission and Fusion", "mark_migrated")
+  log("merged global:")
+  log(serpent.block(global))
+  log("Migration complete.")
+end
+
 -- On the off chance that someone has provided us with a signal-temperature, or pehaps taken it away again.
 function on_configuration_changed(event)
+  if game.active_mods["Fission and Fusion"] then
+    old_global = remote.call("Fission and Fusion", "read_global")
+    if not old_global.migrated then
+      migrate_old_global(old_global)
+    end
+  end
   if game.virtual_signal_prototypes['signal-temperature'] then
     global.SIGNAL_TEMP.name = "signal-temperature"
   else

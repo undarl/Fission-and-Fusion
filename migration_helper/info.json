@@ -1,0 +1,12 @@
+{
+	"name": "Fission and Fusion",
+	"version": "0.4.4",
+	"title": "Fission and Fusion",
+	"author": "Martin Rudat",
+	"dependencies": [
+		"Fission-and-Fusion >= 0.4.4"
+	],
+	"description": "Helper to migrate from Fission and Fusion to Fission-and-Fusion",
+	"factorio_version": "{{FACTORIO_VERSION}}",
+	"homepage": ""
+}

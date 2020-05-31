@@ -1,8 +1,8 @@
 {
-	"name": "Fission and Fusion",
+	"name": "Fission-and-Fusion",
 	"version": "0.4.4",
 	"title": "Fission and Fusion",
-	"author": "Undarl",
+	"author": "Undarl and Martin Rudat",
 	"dependencies": [
 		"base >= 0.18.0",
 		"stdlib >= 0.0.0",

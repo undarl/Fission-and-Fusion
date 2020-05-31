@@ -4,6 +4,7 @@ Date: 2020-05-26
 
   Changes:
     - Updated for 0.18
+    - Renamed from "Fission and Fusion" to "Fission-and-Fusion", and wrote a helper to migrate the data from the old to the new name.
     - Added glow from base nuclear reactor to the inertial confinement reactor
     - Added name for fuel categories as these are now displayed.
     - Rewrote control.lua to hopefully perform better.

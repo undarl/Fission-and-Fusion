@@ -23,8 +23,9 @@ function add_interface(reactor)
   local reactor_index = global.reactor_index
   local unit_number = reactor.unit_number
   reactors[#reactors + 1] = {
-    id = unit_number,
+    unit_number = unit_number,
     entity = reactor,
+    inventory = reactor.burner.inventory,
     interface = interface,
     control = interface.get_or_create_control_behavior(),
     signals = {
@@ -47,7 +48,7 @@ function remove_interface(dead_reactor)
   reactors[i] = valid_reactor
   reactors[#reactors] = nil
   if valid_reactor then
-    reactor_index[valid_reactor.id] = i
+    reactor_index[valid_reactor.unit_number] = i
   end
   reactor_index[dead_reactor_unit_number] = nil
   dead_reactor.interface.destroy() -- remove interface
@@ -65,20 +66,16 @@ function update_reactor_interfaces(event)
   for index=first_index,#reactors,ticks_per_update do
     local reactor = reactors[index]
     local reactor_entity = reactor.entity
-    if not reactor_entity.valid then
+    if not reactor_entity.valid or not reactor.inventory.valid then
       remove_interface(reactor)
       goto next
     end
-    local reactor_signals_parameters = reactor.signals.parameters
+    local reactor_signals = reactor.signals
+    local reactor_signals_parameters = reactor_signals.parameters
     reactor_signals_parameters.temp.count = reactor_entity.temperature
     local fuel_signal = reactor_signals_parameters.fuel
-    local fuel = reactor_entity.burner.inventory
-    if not fuel.is_empty() then
-      fuel_signal.count = fuel[1].count
-    else
-      fuel_signal.count = 0
-    end
-    reactor.control.parameters = reactor.signals
+    fuel_signal.count = reactor.inventory.get_item_count()
+    reactor.control.parameters = reactor_signals
     ::next::
   end
 end
