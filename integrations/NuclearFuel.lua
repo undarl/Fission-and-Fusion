@@ -17,7 +17,7 @@ if settings.startup['undarl-enable-fission'].value then
 			{
 				type = "item",
 				name = "undarl-portable-breeder-fuel-cell",
-				icon = "__Fission and Fusion__/graphics/icons/portable-breeder-fuel-cell.png",
+				icon = "__Fission-and-Fusion__/graphics/icons/portable-breeder-fuel-cell.png",
 				icon_size = 32,
 				subgroup = "intermediate-product",
 				order = "r[uranium-processing]-a[uranium-fuel-cell]-n",
@@ -29,7 +29,7 @@ if settings.startup['undarl-enable-fission'].value then
 			{
 				type = "item",
 				name = "undarl-depleted-breeder-fuel-cell",
-				icon = "__Fission and Fusion__/graphics/icons/depleted-breeder-fuel-cell.png",
+				icon = "__Fission-and-Fusion__/graphics/icons/depleted-breeder-fuel-cell.png",
 				icon_size = 32,
 				subgroup = "intermediate-product",
 				stack_size = 60
@@ -69,7 +69,7 @@ if settings.startup['undarl-enable-fission'].value then
 				enabled = false,
 				category = "centrifuging",
 				ingredients = {{"undarl-depleted-breeder-fuel-cell", 10}},
-				icon = "__Fission and Fusion__/graphics/icons/reprocess-portable-breeder-cell.png",
+				icon = "__Fission-and-Fusion__/graphics/icons/reprocess-portable-breeder-cell.png",
 				icon_size = 32,
 				subgroup = "intermediate-product",
 				order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]-n",

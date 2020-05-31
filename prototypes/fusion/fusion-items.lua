@@ -12,7 +12,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-fusion-generator",
-			icon = "__Fission and Fusion__/graphics/icons/fusion-generator.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fusion-generator.png",
 			icon_size = 32,
 			subgroup = "energy",
 			order = "z[fusion-power]-b[fusion-generator]",
@@ -22,7 +22,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-deuterium-pellets",
-			icon = "__Fission and Fusion__/graphics/icons/deuterium-pellets.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/deuterium-pellets.png",
 			icon_size = 32,
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-z-a",
@@ -35,7 +35,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-fusion-reactor",
-			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fusion-reactor.png",
 			icon_size = 32,
 			subgroup = "energy",
 			order = "z[fusion-power]-a[fusion-reactor]",
@@ -45,7 +45,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-pressure-cylinder",
-			icon = "__Fission and Fusion__/graphics/icons/pressure-cylinder.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/pressure-cylinder.png",
 			icon_size = 32,
 			subgroup = "intermediate-product",
 			order = "d[empty-barrel]-b",
@@ -54,7 +54,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-deuterium-pressure-cylinder",
-			icon = "__Fission and Fusion__/graphics/icons/deuterium-pressure-cylinder.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/deuterium-pressure-cylinder.png",
 			icon_size = 32,
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-z-b",

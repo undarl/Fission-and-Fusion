@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "electric-energy-interface",
 			name = "undarl-rtg-array",
-			icon = "__Fission and Fusion__/graphics/icons/rtg-array.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/rtg-array.png",
 			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {hardness = 0.2, mining_time = 0.5, result = "undarl-rtg-array"},
@@ -25,7 +25,7 @@ data:extend(
 			energy_usage = "0kW",
 			picture =
 			{
-				filename = "__Fission and Fusion__/graphics/rtg-array.png",
+				filename = "__Fission-and-Fusion__/graphics/rtg-array.png",
 				priority = "extra-high",
 				width = 75,
 				height = 62,

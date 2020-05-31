@@ -1,7 +1,7 @@
 --Sprite definition for the reactor interface
 interface_sprite =
 {
-	filename = "__Fission and Fusion__/graphics/fusion-reactor-interface.png",
+	filename = "__Fission-and-Fusion__/graphics/fusion-reactor-interface.png",
 	priority = "extra-high",
 	width = 48,
 	height = 48,
@@ -9,7 +9,7 @@ interface_sprite =
 	shift = { - 0.25, 0.5},
 	scale = 0.8,
 	hr_version = {
-		filename = "__Fission and Fusion__/graphics/fusion-reactor-interface-hr.png",
+		filename = "__Fission-and-Fusion__/graphics/fusion-reactor-interface-hr.png",
 		width = 96,
 		height = 96,
 		frame_count = 1,
@@ -21,7 +21,7 @@ interface_sprite =
 --Sprite definition for the reactor interface LED
 interface_led =
 {
-	filename = "__Fission and Fusion__/graphics/reactor-interface-led.png",
+	filename = "__Fission-and-Fusion__/graphics/reactor-interface-led.png",
 	width = 12,
 	height = 12,
 	frame_count = 1,
@@ -62,7 +62,7 @@ data:extend(
 		{
 			type = "reactor",
 			name = "undarl-fusion-reactor",
-			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fusion-reactor.png",
 			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {hardness = 0.2, mining_time = 0.5, result = "undarl-fusion-reactor"},
@@ -114,7 +114,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__Fission and Fusion__/graphics/fusion-reactor.png",
+						filename = "__Fission-and-Fusion__/graphics/fusion-reactor.png",
 						width = 160,
 						height = 160,
 						shift = util.by_pixel(10, 0)
@@ -124,7 +124,7 @@ data:extend(
 
 			working_light_picture =
 			{
-				filename = "__Fission and Fusion__/graphics/fusion-reactor-lights.png",
+				filename = "__Fission-and-Fusion__/graphics/fusion-reactor-lights.png",
 				width = 160,
 				height = 160,
 				shift = util.by_pixel(9, 2),
@@ -326,7 +326,7 @@ data:extend(
 			--Fusion generator
 			type = "generator",
 			name = "undarl-fusion-generator",
-			icon = "__Fission and Fusion__/graphics/icons/fusion-generator.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fusion-generator.png",
 			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {mining_time = 1, result = "undarl-fusion-generator"},
@@ -369,7 +369,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__Fission and Fusion__/graphics/fusion-generator.png",
+						filename = "__Fission-and-Fusion__/graphics/fusion-generator.png",
 						width = 75,
 						height = 72,
 						frame_count = 1,
@@ -383,7 +383,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__Fission and Fusion__/graphics/fusion-generator.png",
+						filename = "__Fission-and-Fusion__/graphics/fusion-generator.png",
 						width = 75,
 						height = 72,
 						frame_count = 1,
@@ -406,7 +406,7 @@ data:extend(
 			--Fusion reactor circuit interface
 			type = "constant-combinator",
 			name = "undarl-fusion-reactor-interface",
-			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fusion-reactor.png",
 			icon_size = 32,
 			flags = {"player-creation", "not-deconstructable"},
 			max_health = 120,

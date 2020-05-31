@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "technology",
 			name = "undarl-portable-reactors",
-			icon = "__Fission and Fusion__/graphics/fission-reactor-equipment.png",
+			icon = "__Fission-and-Fusion__/graphics/fission-reactor-equipment.png",
 			icon_size = 128,
 			effects =
 			{

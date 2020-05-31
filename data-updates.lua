@@ -17,7 +17,7 @@ if settings.startup['undarl-enable-fusion'].value then
 			{
 				type = "virtual-signal",
 				name = "undarl-signal-temperature",
-				icon = "__Fission and Fusion__/graphics/icons/temperature.png",
+				icon = "__Fission-and-Fusion__/graphics/icons/temperature.png",
 				icon_size = 32,
 				subgroup = "undarl-fusion-reactor-signals",
 				order = "a-a"

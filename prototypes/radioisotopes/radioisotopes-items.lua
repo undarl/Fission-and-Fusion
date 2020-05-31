@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-radioisotopes",
-			icon = "__Fission and Fusion__/graphics/icons/radioisotopes.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/radioisotopes.png",
 			icon_size = 32,
 			subgroup = "intermediate-product",
 			order = "h",
@@ -12,7 +12,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-rtg-equipment",
-			icon = "__Fission and Fusion__/graphics/icons/rtg.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/rtg.png",
 			icon_size = 32,
 			placed_as_equipment_result = "undarl-rtg-equipment",
 			subgroup = "equipment",
@@ -22,7 +22,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-rtg-array",
-			icon = "__Fission and Fusion__/graphics/icons/rtg-array.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/rtg-array.png",
 			icon_size = 32,
 			subgroup = "energy",
 			order = "y[radioisotopes]-a[rtg-array]",
@@ -42,7 +42,7 @@ while frtgpower >= 10 do
 				name = "undarl-fast-rtg-equipment-" .. frtgpower,
 				localised_name = {"equipment-name.undarl-fast-rtg-equipment", frtgpower},
 				localised_description = {"item-description.undarl-fast-rtg-equipment", frtgpower},
-				icon = "__Fission and Fusion__/graphics/icons/fast-rtg.png",
+				icon = "__Fission-and-Fusion__/graphics/icons/fast-rtg.png",
 			icon_size = 32,
 				placed_as_equipment_result = "undarl-fast-rtg-equipment-" .. frtgpower,
 				subgroup = "equipment",

@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-portable-uranium-fuel-cell",
-			icon = "__Fission and Fusion__/graphics/icons/portable-uranium-fuel-cell.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/portable-uranium-fuel-cell.png",
 			icon_size = 32,
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-a[uranium-fuel-cell]-m",
@@ -15,7 +15,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-depleted-uranium-fuel-cell",
-			icon = "__Fission and Fusion__/graphics/icons/depleted-uranium-fuel-cell.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/depleted-uranium-fuel-cell.png",
 			icon_size = 32,
 			subgroup = "intermediate-product",
 			stack_size = 60
@@ -23,7 +23,7 @@ data:extend(
 		{
 			type = "item",
 			name = "undarl-fission-reactor-equipment",
-			icon = "__Fission and Fusion__/graphics/icons/fission-reactor-equipment.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fission-reactor-equipment.png",
 			icon_size = 32,
 			placed_as_equipment_result = "undarl-fission-reactor-equipment",
 			subgroup = "equipment",
