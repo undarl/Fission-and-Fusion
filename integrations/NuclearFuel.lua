@@ -1,5 +1,6 @@
 --Add radioisotope chance to breeder cell reprocessing
 if settings.startup['undarl-enable-radioisotopes'].value then
+	log(serpent.block(data.raw.recipe['breeder-fuel-reprocessing']))
 	table.insert(
 		data.raw.recipe['breeder-fuel-reprocessing'].results,
 	{name = "undarl-radioisotopes", probability = 0.5, amount = 1})

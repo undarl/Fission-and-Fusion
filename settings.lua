@@ -23,6 +23,14 @@ data:extend(
     },
     {
         type = "string-setting",
+        name = "undarl-free-portable-fusion",
+        setting_type = "startup",
+        default_value = "",
+        allow_blank = true,
+        order = "fandf-a-c2",
+    },
+    {
+        type = "string-setting",
         name = "undarl-fast-rtg-recycling",
         setting_type = "startup",
         default_value = "50%",

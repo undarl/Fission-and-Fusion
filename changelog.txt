@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2020-08-18
+
+  Features:
+    - Add support for non-vanilla portable fusion generators
+  Changes:
+    - Updated for 1.0
+    - Fiddled with changelog again.
+  Bugfixes:
+    - Fix stuff reported by luacheck.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.4.6
 Date: 2020-05-31
 
@@ -15,7 +27,6 @@ Date: 2020-05-31
     - Add an explicit dependency from the fusion power technology on space science packs
     - Deuterium gas now has a fuel value of 6.2392J (what you would get if you just set it on fire), and fusion generators are now highly efficient (the difference between fusing and burning Deuterium).
     - Reduced collision box on RTG to match sprite.
-  Optimisation:
     - no longer requires control.lua to make the fusion generators work.
   Graphics:
     - improve the alignment of entity sprites for RTG and fusion reactor.
@@ -36,7 +47,6 @@ Date: 2020-05-31
     - Added name for fuel categories as these are now displayed.
   Graphics:
     - Added glow from base nuclear reactor to the inertial confinement reactor
-  Optimisation:
     - Rewrote control.lua to hopefully perform better.
     - Allow fusion reactor interface update to be disabled.
   Bugfixes:

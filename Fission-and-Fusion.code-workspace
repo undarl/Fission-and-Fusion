@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"Lua.workspace.library": {
+			"C:/Progam Files/Factorio/data/core/lualib": true
+		},
+		"terminal.integrated.shell.windows": "C:\\WINDOWS\\system32\\wsl.exe",
+		"terminal.integrated.automationShell.windows": "C:\\WINDOWS\\system32\\wsl.exe",
+	}
+}

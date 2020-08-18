@@ -31,13 +31,10 @@ require('integrations.setting-data-updates')
 -- add intermediate_recipes to productivity modules
 
 for _, module in pairs(data.raw["module"]) do
-  local module_effect = module.effect
-  local productivity_effect = module_effect["productivity"]
-  if not productivity_effect then goto next_module end
-  local limitation = module.limitation
-  if not limitation then goto next_module end
-  for recipe_name in pairs(intermediate_recipes) do
-    table.insert(limitation, recipe_name)
+	local module_limitation = module.limitation
+  if module.effect.productivity and module_limitation then
+    for recipe_name in pairs(intermediate_recipes) do
+      table.insert(module_limitation, recipe_name)
+    end
   end
-  ::next_module::
 end

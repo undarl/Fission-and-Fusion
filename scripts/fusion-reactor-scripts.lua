@@ -1,11 +1,13 @@
+local S = {}
+
 --Fusion reactor interfaces adapted with thanks from GotLag's Reactor Interface.
 local TICKS_PER_UPDATE = settings.global['undarl-reactor-interface-ticks-per-update'].value
 
-function update_reactor_interface_ticks_per_update()
+function S.update_reactor_interface_ticks_per_update()
   TICKS_PER_UPDATE = settings.global['undarl-reactor-interface-ticks-per-update'].value
 end
 
-function add_interface(reactor)
+function S.add_interface(reactor)
   local reactor_position = reactor.position
   local interface = reactor.surface.create_entity{
     name = "undarl-fusion-reactor-interface",
@@ -38,7 +40,7 @@ function add_interface(reactor)
   reactor_index[unit_number] = #reactors
 end
 
-function remove_interface(dead_reactor)
+function S.remove_interface(dead_reactor)
   local dead_reactor_unit_number = dead_reactor.unit_number
   local reactor_index = global.reactor_index
   local i = reactor_index[dead_reactor_unit_number]
@@ -54,7 +56,7 @@ function remove_interface(dead_reactor)
   dead_reactor.interface.destroy() -- remove interface
 end
 
-function update_reactor_interfaces(event)
+function S.update_reactor_interfaces(event)
   local reactors = global.reactors
   if not next(reactors) then return end
 
@@ -67,7 +69,7 @@ function update_reactor_interfaces(event)
     local reactor = reactors[index]
     local reactor_entity = reactor.entity
     if not reactor_entity.valid or not reactor.inventory.valid then
-      remove_interface(reactor)
+      S.remove_interface(reactor)
       goto next
     end
     local reactor_signals = reactor.signals
@@ -79,3 +81,5 @@ function update_reactor_interfaces(event)
     ::next::
   end
 end
+
+return S

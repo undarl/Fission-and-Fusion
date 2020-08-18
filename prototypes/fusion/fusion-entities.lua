@@ -1,5 +1,5 @@
 --Sprite definition for the reactor interface
-interface_sprite =
+local interface_sprite =
 {
 	filename = "__Fission-and-Fusion__/graphics/fusion-reactor-interface.png",
 	priority = "extra-high",
@@ -19,7 +19,7 @@ interface_sprite =
 }
 
 --Sprite definition for the reactor interface LED
-interface_led =
+local interface_led =
 {
 	filename = "__Fission-and-Fusion__/graphics/reactor-interface-led.png",
 	width = 12,
@@ -30,7 +30,7 @@ interface_led =
 }
 
 --Wire connection definitions for the reactor interface
-interface_connection =
+local interface_connection =
 {
 	shadow =
 	{
@@ -190,14 +190,14 @@ data:extend(
 					}
 				},
 				heat_glow =
-	      {
-	        filename = "__base__/graphics/entity/nuclear-reactor/reactor-heat-glow.png",
-	        priority = "extra-high",
-	        width = 188,
-	        height = 190,
-	        tint = heat_glow_tint,
-	        shift = util.by_pixel(-2, -4)
-	      }
+				{
+					filename = "__base__/graphics/entity/nuclear-reactor/reactor-heat-glow.png",
+					priority = "extra-high",
+					width = 188,
+					height = 190,
+					tint = heat_glow_tint,
+					shift = util.by_pixel(-2, -4)
+				}
 			},
 
 			connection_patches_connected =

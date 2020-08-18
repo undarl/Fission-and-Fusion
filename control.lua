@@ -17,10 +17,10 @@ end
 
 -- functions
 
-require ('scripts.fast-rtg-scripts')
-require ('scripts.fusion-reactor-scripts')
+local RTG = require ('scripts.fast-rtg-scripts')
+local Reactor = require ('scripts.fusion-reactor-scripts')
 
-function on_init()
+local function on_init()
   global.fastrtgs = {
     next = 1
   }
@@ -37,7 +37,7 @@ function on_init()
   global.SIGNAL_FUEL_AVAILABLE = {type = "item", name = "undarl-deuterium-pellets"}
 end
 
-function migrate_old_global(old_global)
+local function migrate_old_global(old_global)
   log("Migrating global from Fission and Fusion to Fission-and-Fusion...")
   log('global from "Fission and Fusion" (old):')
   log(serpent.block(old_global))
@@ -56,7 +56,7 @@ function migrate_old_global(old_global)
   old_fastrtgs.ticks_per_update = nil
 
   if old_fastrtgs then
-    for k, rtg in pairs(old_fastrtgs) do
+    for _, rtg in pairs(old_fastrtgs) do
       if not rtg.last_tick then
         rtg.last_tick = last_rtg_update_tick
       end
@@ -64,11 +64,11 @@ function migrate_old_global(old_global)
     end
   end
 
-  recalculate_rtg_update_rate(fastrtgs)
+  RTG.recalculate_rtg_update_rate(fastrtgs)
 
   -- reset temperature to 15, given that we're burning fluid, rather than fiddling with fluid temperature.
   local fusion_gens = old_global.fusion_gens
-  for k,generator in pairs(fusion_gens) do
+  for _,generator in pairs(fusion_gens) do
     if type(generator) == 'table' then
       local fluid = generator[1]
       fluid.temperature = 15
@@ -86,7 +86,7 @@ function migrate_old_global(old_global)
   local SIGNAL_FUEL_AVAILABLE = global.SIGNAL_FUEL_AVAILABLE
 
   if old_reactors then
-    for k, reactor in pairs(old_reactors) do
+    for _, reactor in pairs(old_reactors) do
       local parameters = reactor.signals.parameters
       local unit_number = reactor.id
       reactor.id = nil
@@ -106,9 +106,9 @@ function migrate_old_global(old_global)
 end
 
 -- On the off chance that someone has provided us with a signal-temperature, or pehaps taken it away again.
-function on_configuration_changed(event)
+local function on_configuration_changed(_)
   if game.active_mods["Fission and Fusion"] then
-    old_global = remote.call("Fission and Fusion", "read_global")
+    local old_global = remote.call("Fission and Fusion", "read_global")
     if not old_global.migrated then
       migrate_old_global(old_global)
     end
@@ -120,23 +120,23 @@ function on_configuration_changed(event)
   end
 end
 
-function on_runtime_mod_setting_changed(event)
+local function on_runtime_mod_setting_changed(event)
   local setting = event.setting
   if setting == "undarl-reactor-interface-ticks-per-update" then
-    update_reactor_interface_ticks_per_update()
+    Reactor.update_reactor_interface_ticks_per_update()
   end
 end
 
 local on_tick
 if RTG_ENABLED and FUSION_ENABLED then
   on_tick = function (event)
-    update_fast_rtgs(event)
-    update_reactor_interfaces(event)
+    RTG.update_fast_rtgs(event)
+    Reactor.update_reactor_interfaces(event)
   end
 elseif FUSION_ENABLED then
-  on_tick = update_reactor_interfaces(event)
+  on_tick = Reactor.update_reactor_interfaces
 elseif RTG_ENABLED then
-  on_tick = update_fast_rtgs
+  on_tick = RTG.update_fast_rtgs
 end
 
 --Event hooks
@@ -154,7 +154,7 @@ if on_tick then
 end
 
 local function register_events(events, handler, filters)
-  for i,event in ipairs(events) do
+  for _,event in ipairs(events) do
     script.on_event(event, handler, filters)
   end
 end
@@ -172,7 +172,7 @@ if FUSION_ENABLED then
       defines_events.on_built_entity,
       defines_events.on_robot_built_entity,
     },
-    function (event) add_interface(event.created_entity) end,
+    function (event) Reactor.add_interface(event.created_entity) end,
     fusion_reactor_filter
   )
 
@@ -184,7 +184,7 @@ if FUSION_ENABLED then
   if SCRIPT_RAISED_HAS_FILTER then
     register_events(
       script_raised_create_events,
-      function (event) add_interface(event.entity) end,
+      function (event) Reactor.add_interface(event.entity) end,
       fusion_reactor_filter
     )
   else
@@ -192,14 +192,14 @@ if FUSION_ENABLED then
       script_raised_create_events,
       function (event)
         local entity = event.entity
-        if entity_name == "undarl-fusion-reactor" then
-          add_interface(entity)
+        if entity.name == "undarl-fusion-reactor" then
+          Reactor.add_interface(entity)
         end
       end
     )
   end
 
-  local remove_interface_event = function(event) remove_interface(event.entity) end
+  local remove_interface_event = function(event) Reactor.remove_interface(event.entity) end
 
   register_events(
     {
@@ -223,7 +223,7 @@ if FUSION_ENABLED then
       function(event)
         local entity = event.entity
         if entity.name ~= "undarl-fusion-reactor" then return end
-        remove_interface(entity)
+        Reactor.remove_interface(entity)
       end
     )
   end
@@ -232,6 +232,6 @@ end
 if RTG_ENABLED then
   script.on_event(
     defines_events.on_player_placed_equipment,
-    place_fast_rtg
+    RTG.place_fast_rtg
   )
 end

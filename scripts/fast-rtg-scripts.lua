@@ -1,3 +1,5 @@
+local S = {}
+
 --One game day is 25000 ticks
 local DEPLETION_INTERVAL = 25000
 local TICKS_PER_UPDATE = 600
@@ -11,7 +13,7 @@ for power_percent=100,10,-5 do
   power_percent_to_rtg_equipment[power_percent] = equipment_name
 end
 
-function recalculate_rtg_update_rate(fastrtgs)
+function S.recalculate_rtg_update_rate(fastrtgs)
   local rtgcount = #fastrtgs
   if rtgcount >= TICKS_PER_UPDATE then
     fastrtgs.rtgs_per_update = math.ceil(rtgcount / TICKS_PER_UPDATE)
@@ -26,7 +28,7 @@ function recalculate_rtg_update_rate(fastrtgs)
   end
 end
 
-function place_fast_rtg(event)
+function S.place_fast_rtg(event)
   local equipment = event.equipment
   local power_percent = rtg_equipment_to_power_percent[equipment.name]
   if not power_percent then return end
@@ -39,10 +41,10 @@ function place_fast_rtg(event)
     power_percent = power_percent,
     last_tick = game.tick
   }
-  recalculate_rtg_update_rate(fastrtgs)
+  S.recalculate_rtg_update_rate(fastrtgs)
 end
 
-function update_fast_rtgs(event)
+function S.update_fast_rtgs(event)
   local fastrtgs = global.fastrtgs
   local ticks_per_update = fastrtgs.ticks_per_update
   if not ticks_per_update then return end
@@ -51,7 +53,7 @@ function update_fast_rtgs(event)
   local rtgs_per_update = fastrtgs.rtgs_per_update
   local removed = false
   local i = fastrtgs.next
-  for j=1,rtgs_per_update do
+  for _ = 1,rtgs_per_update do
     local rtg = fastrtgs[i]
     local remove = false
     if not rtg.entity.valid then
@@ -90,6 +92,8 @@ function update_fast_rtgs(event)
   end
   fastrtgs.next = i
   if removed then
-    recalculate_rtg_update_rate(fastrtgs)
+    S.recalculate_rtg_update_rate(fastrtgs)
   end
 end
+
+return S
