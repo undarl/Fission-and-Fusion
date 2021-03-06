@@ -1,7 +1,7 @@
 --Sprite definition for the reactor interface
-interface_sprite =
+local interface_sprite =
 {
-	filename = "__Fission and Fusion__/graphics/fusion-reactor-interface.png",
+	filename = "__Fission-and-Fusion__/graphics/fusion-reactor-interface.png",
 	priority = "extra-high",
 	width = 48,
 	height = 48,
@@ -9,7 +9,7 @@ interface_sprite =
 	shift = { - 0.25, 0.5},
 	scale = 0.8,
 	hr_version = {
-		filename = "__Fission and Fusion__/graphics/fusion-reactor-interface-hr.png",
+		filename = "__Fission-and-Fusion__/graphics/fusion-reactor-interface-hr.png",
 		width = 96,
 		height = 96,
 		frame_count = 1,
@@ -19,9 +19,9 @@ interface_sprite =
 }
 
 --Sprite definition for the reactor interface LED
-interface_led =
+local interface_led =
 {
-	filename = "__Fission and Fusion__/graphics/reactor-interface-led.png",
+	filename = "__Fission-and-Fusion__/graphics/reactor-interface-led.png",
 	width = 12,
 	height = 12,
 	frame_count = 1,
@@ -30,7 +30,7 @@ interface_led =
 }
 
 --Wire connection definitions for the reactor interface
-interface_connection =
+local interface_connection =
 {
 	shadow =
 	{
@@ -62,15 +62,16 @@ data:extend(
 		{
 			type = "reactor",
 			name = "undarl-fusion-reactor",
-			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fusion-reactor.png",
 			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {hardness = 0.2, mining_time = 0.5, result = "undarl-fusion-reactor"},
 			max_health = 500,
 			corpse = "big-remnants",
 			consumption = settings.startup['undarl-reactor-output'].value,
-			burner =
+			energy_source =
 			{
+				type = "burner",
 				fuel_category = "undarl-fusion",
 				effectivity = 0.5,
 				fuel_inventory_size = 1,
@@ -80,39 +81,54 @@ data:extend(
 
 			lower_layer_picture = {
 				filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
-				width = 160,
-				height = 160,
-				shift = { - 0.03125, - 0.1875 },
+				width = 156,
+				height = 156,
+				shift = util.by_pixel(-2, -4),
 				hr_version =
 				{
 					filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes.png",
 					width = 320,
-					height = 320,
+					height = 316,
 					scale = 0.5,
-					shift = { - 0.03125, - 0.1875 },
+					shift = util.by_pixel(-1, -5),
 				}
 			},
+			heat_lower_layer_picture =
+	    {
+	      filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes-heated.png",
+	      width = 156,
+	      height = 156,
+	      shift = util.by_pixel(-3, -4),
+	      hr_version =
+	      {
+	        filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes-heated.png",
+	        width = 320,
+	        height = 316,
+	        scale = 0.5,
+	        shift = util.by_pixel(-0.5, -4.5),
+	      }
+	    },
 
 			picture =
 			{
 				layers =
 				{
 					{
-						filename = "__Fission and Fusion__/graphics/fusion-reactor.png",
+						filename = "__Fission-and-Fusion__/graphics/fusion-reactor.png",
 						width = 160,
 						height = 160,
-						shift = { - 0.03125, - 0.1875 },
+						shift = util.by_pixel(10, 0)
 					},
 				}
 			},
 
 			working_light_picture =
 			{
-				filename = "__Fission and Fusion__/graphics/fusion-reactor-lights.png",
+				filename = "__Fission-and-Fusion__/graphics/fusion-reactor-lights.png",
 				width = 160,
 				height = 160,
-				shift = { - 0.03125, - 0.1875 },
-				blend_mode = "additive",
+				shift = util.by_pixel(9, 2),
+				blend_mode = "additive"
 			},
 
 			light = {intensity = 0.6, size = 9.9, shift = {0.0, 0.0}, color = {r = 0.0, g = 1.0, b = 0.0}},
@@ -172,6 +188,15 @@ data:extend(
 						position = { - 2, - 2},
 						direction = defines.direction.west
 					}
+				},
+				heat_glow =
+				{
+					filename = "__base__/graphics/entity/nuclear-reactor/reactor-heat-glow.png",
+					priority = "extra-high",
+					width = 188,
+					height = 190,
+					tint = heat_glow_tint,
+					shift = util.by_pixel(-2, -4)
 				}
 			},
 
@@ -247,6 +272,46 @@ data:extend(
 				}
 			},
 
+			heat_connection_patches_connected =
+	    {
+	      sheet =
+	      {
+	        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+	        width = 32,
+	        height = 32,
+	        variation_count = 12,
+	        hr_version =
+	        {
+	          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+	          width = 64,
+	          height = 64,
+	          variation_count = 12,
+	          scale = 0.5
+	        }
+	      }
+	    },
+
+	    heat_connection_patches_disconnected =
+	    {
+	      sheet =
+	      {
+	        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+	        width = 32,
+	        height = 32,
+	        variation_count = 12,
+	        y = 32,
+	        hr_version =
+	        {
+	          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+	          width = 64,
+	          height = 64,
+	          variation_count = 12,
+	          y = 64,
+	          scale = 0.5
+	        }
+	      }
+	    },
+
 			vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 			working_sound =
 			{
@@ -261,30 +326,32 @@ data:extend(
 			--Fusion generator
 			type = "generator",
 			name = "undarl-fusion-generator",
-			icon = "__Fission and Fusion__/graphics/icons/fusion-generator.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fusion-generator.png",
 			icon_size = 32,
 			flags = {"placeable-neutral", "player-creation"},
 			minable = {mining_time = 1, result = "undarl-fusion-generator"},
 			max_health = 300,
 			corpse = "big-remnants",
 			dying_explosion = "medium-explosion",
-			effectivity = 1,
-			fluid_usage_per_tick = 0.017, --About 1 gas per second
-			maximum_temperature = 20,
+			effectivity = 10000000 / 6.2392, -- 10MJ / 6.2392J
+			fluid_usage_per_tick = 1 / 60, -- 1 gas per second
+			maximum_temperature = 15,
+			burns_fluid = true,
+			max_power_output = "10MW",
 			collision_box = {{ - 0.9, - 0.9}, {0.9, 0.9}},
 			selection_box = {{ - 1, - 1}, {1, 1}},
 			fluid_box =
 			{
 				base_area = 1,
-				--height = 2,
-				base_level = -1,
+				height = 1,
+				base_level = -0.5,
 				pipe_covers = pipecoverspictures(),
 				pipe_connections =
 				{
-					{ type = "input", position = {0.5, 1.5} },
-					{ type = "input", position = {0.5, - 1.5} },
+					{ type = "input-output", position = {0.5, 1.5} },
+					{ type = "input-output", position = {0.5, - 1.5} },
 				},
-				production_type = "input",
+				production_type = "input-output",
 				filter = "undarl-gas-deuterium"
 			},
 			fluid_input =
@@ -302,7 +369,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__Fission and Fusion__/graphics/fusion-generator.png",
+						filename = "__Fission-and-Fusion__/graphics/fusion-generator.png",
 						width = 75,
 						height = 72,
 						frame_count = 1,
@@ -316,7 +383,7 @@ data:extend(
 				layers =
 				{
 					{
-						filename = "__Fission and Fusion__/graphics/fusion-generator.png",
+						filename = "__Fission-and-Fusion__/graphics/fusion-generator.png",
 						width = 75,
 						height = 72,
 						frame_count = 1,
@@ -339,7 +406,7 @@ data:extend(
 			--Fusion reactor circuit interface
 			type = "constant-combinator",
 			name = "undarl-fusion-reactor-interface",
-			icon = "__Fission and Fusion__/graphics/icons/fusion-reactor.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fusion-reactor.png",
 			icon_size = 32,
 			flags = {"player-creation", "not-deconstructable"},
 			max_health = 120,

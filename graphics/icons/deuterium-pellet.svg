@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   version="1.1"
+   id="svg5428"
+   style="shape-rendering:crispEdges"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="deuterium-pellet.svg">
+  <defs
+     id="defs5422">
+    <inkscape:path-effect
+       effect="fill_between_strokes"
+       id="path-effect6022"
+       is_visible="true"
+       linkedpath=""
+       secondpath=""
+       reversesecond="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="22.64"
+     inkscape:cx="15.526502"
+     inkscape:cy="16.464511"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer6"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     showborder="false"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:window-width="1858"
+     inkscape:window-height="1057"
+     inkscape:window-x="54"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5425">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Outline"
+     style="display:inline">
+    <path
+       style="fill:#bbc4db;fill-opacity:1;stroke:#000000;stroke-width:0.99987507;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
+       d="m 6.4999375,25.474403 c -4e-7,2.151441 1.8107013,4.139451 4.7500315,5.215166 2.939329,1.075716 6.560733,1.075716 9.500062,0 2.939325,-1.075715 4.750027,-3.063725 4.750032,-5.215156 V 6.5218924 C 25.500064,3.1960589 21.246739,0.49993805 16,0.49993812 c -5.246733,0 -9.5000544,2.69611478 -9.5000625,6.02194428 z"
+       id="path6028"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssccscc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Inside Lines"
+     style="display:inline">
+    <path
+       sodipodi:open="true"
+       d="m 25.500159,22.5 a 9.5001593,5.9964557 0 0 1 -4.750079,5.193083 9.5001593,5.9964557 0 0 1 -9.50016,0 A 9.5001593,5.9964557 0 0 1 6.4998407,22.5"
+       sodipodi:end="3.1415927"
+       sodipodi:start="0"
+       sodipodi:ry="5.9964557"
+       sodipodi:rx="9.5001593"
+       sodipodi:cy="22.5"
+       sodipodi:cx="16"
+       sodipodi:type="arc"
+       id="path6008"
+       style="fill:none;stroke:#000000;stroke-width:0.99968165;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99968207;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
+       id="path6033"
+       sodipodi:type="arc"
+       sodipodi:cx="16"
+       sodipodi:cy="6.5000005"
+       sodipodi:rx="9.5001583"
+       sodipodi:ry="5.9964552"
+       sodipodi:start="0"
+       sodipodi:end="3.1415927"
+       d="m 25.500158,6.5000005 a 9.5001583,5.9964552 0 0 1 -4.750079,5.1930825 9.5001583,5.9964552 0 0 1 -9.500158,0 9.5001583,5.9964552 0 0 1 -4.7500793,-5.1930828"
+       sodipodi:open="true" />
+    <ellipse
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.99954981;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6035"
+       cx="16"
+       cy="6"
+       rx="5.5002251"
+       ry="3.5002251" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.91573703;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6048"
+       cx="16"
+       cy="6"
+       rx="2"
+       ry="1" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Deuterium Base"
+     style="display:inline">
+    <circle
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1.22379291;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
+       id="path6044"
+       cx="12.5"
+       cy="18.5"
+       r="3.5" />
+    <circle
+       r="3.5"
+       cy="18.5"
+       cx="19.5"
+       id="circle6046"
+       style="display:inline;fill:#9537fe;fill-opacity:1;stroke:none;stroke-width:1.22379291;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Deuterium Plus"
+     style="display:inline">
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;shape-rendering:crispEdges"
+       d="m 11,18.5 h 3"
+       id="path6037"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;shape-rendering:crispEdges"
+       d="m 12.5,17 v 3"
+       id="path6039"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-288.53332)"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="C:\Users\Martin Rudat\Documents\GitHub\Fission-and-Fusion\graphics\icons\deuterium-pellets.png"
+       xlink:href="deuterium-pellets.png"
+       width="32"
+       height="32"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeSpeed"
+       id="image5438"
+       x="0"
+       y="288.53333" />
+  </g>
+</svg>

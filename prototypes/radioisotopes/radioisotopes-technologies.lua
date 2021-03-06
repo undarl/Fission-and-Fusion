@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "technology",
 			name = "undarl-radioisotopes",
-			icon = "__Fission and Fusion__/graphics/rtg-tech.png",
+			icon = "__Fission-and-Fusion__/graphics/rtg-tech.png",
 			icon_size = 256,
 			effects =
 			{
@@ -26,9 +26,9 @@ data:extend(
 				count = 500,
 				ingredients =
 				{
-					{"science-pack-1", 1},
-					{"science-pack-2", 1},
-					{"science-pack-3", 1},
+					{"automation-science-pack", 1},
+					{"logistic-science-pack", 1},
+					{"chemical-science-pack", 1},
 					{"production-science-pack", 1}
 				},
 				time = 30

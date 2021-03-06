@@ -1,3 +1,7 @@
+[Fission and Fusion](https://mods.factorio.com/mod/Fission%20and%20Fusion) updated for 0.18 until [undarl](https://mods.factorio.com/user/undarl) gets a [round tuit](https://en.wiktionary.org/wiki/round_tuit).
+
+Note that to migrate a save from "Fission and Fusion" (note the spaces) to "Fission-and-Fusion", you will need to extract "Fission and Fusion_0.4.4.zip" from within "{{MOD_NAME}}_{{VERSION}}.zip" and add it to your mods folder.
+
 # Fission and Fusion
 
 Adds portable fission generators, radioisotope thermoelectric generators, and factory-level fusion power as well as altering portable fusion reactors and increasing their research difficulty. Each branch of this mod can be toggled on and off individually in the mod startup options.
@@ -28,14 +32,6 @@ Adds portable fission generators, radioisotope thermoelectric generators, and fa
 **Magnetic Conversion Fusion Generators:** These more advanced facilities fuse deuterium gas directly, and produce electricity using direct energy conversion. They are not as powerful individually as IFE reactors, but they are somewhat smaller, more efficient, and require no other power generation infrastructure.
 
 **Portable Fusion Reactors:** The pinnacle of fusion technology so far, these reactor-generator units are small enough to fit in powered armor and run very efficiently on compressed deuterium gas.
-
-## Changelog
-* 0.4.2 - Merged a pull request from the helpful vctgross which patched some files for 0.16.
-* 0.4.1 - Shifted fast RTG recycling to chemplants to fix a handcrafting bug; added a setting to shift it to centrifuges instead.
-* 0.4.0 - Added pressure cylinders; converted portable fusion reactors to run on compressed deuterium.
-* 0.3.0 - Reduced standard RTG size by half and scaled output down by 20%; reduced RTG Array ingredients and output; added a new Fast RTG that loses capacity over time.
-* 0.2.0 - Increased default fusion reactor output by 50%; created a startup setting for reactor output; rebalanced fusion fuel recipes; removed workaround for generator heat capacity bug.
-* 0.1.0 - Initial release
 
 ## Current Integrations with Other Mods
 * [Nuclear Fuel](https://mods.factorio.com/mods/GotLag/Nuclear%20Fuel) by GotLag

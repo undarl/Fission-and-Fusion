@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "technology",
 			name = "undarl-fusion",
-			icon = "__Fission and Fusion__/graphics/fusion_power.png",
+			icon = "__Fission-and-Fusion__/graphics/fusion_power.png",
 			icon_size = 256,
 			effects =
 			{
@@ -28,16 +28,19 @@ data:extend(
 					recipe = "undarl-fusion-reactor",
 				}
 			},
-			prerequisites = {"nuclear-power"},
+			prerequisites = {
+				"nuclear-power",
+				"space-science-pack"
+			},
 			unit =
 			{
 				count = 1000,
 				ingredients = {
-					{"science-pack-1", 2},
-					{"science-pack-2", 2},
-					{"science-pack-3", 2},
+					{"automation-science-pack", 2},
+					{"logistic-science-pack", 2},
+					{"chemical-science-pack", 2},
 					{"production-science-pack", 2},
-					{"high-tech-science-pack", 2},
+					{"utility-science-pack", 2},
 					{"space-science-pack", 1}
 				},
 				time = 30
@@ -46,7 +49,7 @@ data:extend(
 		{
 			type = "technology",
 			name = "undarl-advanced-fusion",
-			icon = "__Fission and Fusion__/graphics/advanced_fusion.png",
+			icon = "__Fission-and-Fusion__/graphics/advanced_fusion.png",
 			icon_size = 256,
 			effects =
 			{
@@ -73,11 +76,11 @@ data:extend(
 			{
 				count = 1000,
 				ingredients = {
-					{"science-pack-1", 3},
-					{"science-pack-2", 3},
-					{"science-pack-3", 3},
+					{"automation-science-pack", 3},
+					{"logistic-science-pack", 3},
+					{"chemical-science-pack", 3},
 					{"production-science-pack", 3},
-					{"high-tech-science-pack", 3},
+					{"utility-science-pack", 3},
 					{"space-science-pack", 1}
 				},
 				time = 30

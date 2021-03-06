@@ -21,7 +21,7 @@ data:extend(
 			enabled = false,
 			category = "centrifuging",
 			ingredients = {{"undarl-depleted-uranium-fuel-cell", 10}},
-			icon = "__Fission and Fusion__/graphics/icons/reprocess-portable-uranium-cell.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/reprocess-portable-uranium-cell.png",
 			icon_size = 32,
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]-m",
@@ -50,3 +50,9 @@ data:extend(
 			result = "undarl-fission-reactor-equipment",
 		},
 })
+
+return {
+	collect_intermediate_recipes = function (intermediate_recipes)
+		intermediate_recipes["undarl-portable-uranium-fuel-cell"] = true
+	end
+}

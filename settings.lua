@@ -1,48 +1,72 @@
 data:extend(
 {
-	{
+    {
         type = "bool-setting",
         name = "undarl-enable-fission",
         setting_type = "startup",
         default_value = true,
         order = "fandf-a-a",
     },
-	{
+    {
         type = "bool-setting",
         name = "undarl-enable-radioisotopes",
         setting_type = "startup",
         default_value = true,
         order = "fandf-a-b",
     },
-	{
+    {
         type = "bool-setting",
         name = "undarl-enable-fusion",
         setting_type = "startup",
         default_value = true,
         order = "fandf-a-c",
     },
-	{
+    {
+        type = "string-setting",
+        name = "undarl-free-portable-fusion",
+        setting_type = "startup",
+        default_value = "",
+        allow_blank = true,
+        order = "fandf-a-c2",
+    },
+    {
         type = "string-setting",
         name = "undarl-fast-rtg-recycling",
         setting_type = "startup",
         default_value = "50%",
-		allowed_values = {"none", "25%", "50%", "75%"},
+        allowed_values = {"none", "25%", "50%", "75%"},
         order = "fandf-a-d",
     },
-	{
+    {
         type = "string-setting",
         name = "undarl-fast-rtg-recycling-facility",
         setting_type = "startup",
         default_value = "chem plant",
-		allowed_values = {"chem plant", "centrifuge"},
+        allowed_values = {"chem plant", "centrifuge"},
         order = "fandf-a-e",
     },
-	{
+    {
         type = "string-setting",
         name = "undarl-reactor-output",
         setting_type = "startup",
         default_value = "60MW",
-		allowed_values = {"40MW", "60MW", "80MW"},
+        allowed_values = {"40MW", "60MW", "80MW"},
         order = "fandf-a-f",
+    },
+    {
+        type = "int-setting",
+        name = "undarl-reactor-interface-ticks-per-update",
+        setting_type = "runtime-global",
+        default_value = "1",
+        minimum_value = "0",
+        maximum_value = "60",
+        order = "fandf-a-g",
+    },
+    {
+        type = "bool-setting",
+        name = "undarl-enable-fusion-productivity",
+        setting_type = "startup",
+        default_value = false,
+        order = "fandf-a-h",
     },
 })

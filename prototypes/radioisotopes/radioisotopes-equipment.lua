@@ -5,12 +5,12 @@ data:extend(
 			name = "undarl-rtg-equipment",
 			sprite =
 			{
-				filename = "__Fission and Fusion__/graphics/rtg.png",
+				filename = "__Fission-and-Fusion__/graphics/rtg.png",
 				width = 32,
 				height = 64,
 				priority = "medium",
 				hr_version = {
-					filename = "__Fission and Fusion__/graphics/rtg-hr.png",
+					filename = "__Fission-and-Fusion__/graphics/rtg-hr.png",
 					width = 64,
 					height = 128,
 				}
@@ -45,12 +45,12 @@ while frtgpower >= 10 do
 				localised_description = {"item-description.undarl-fast-rtg-equipment", frtgpower},
 				sprite =
 				{
-					filename = "__Fission and Fusion__/graphics/fast-rtg.png",
+					filename = "__Fission-and-Fusion__/graphics/fast-rtg.png",
 					width = 32,
 					height = 64,
 					priority = "medium",
 					hr_version = {
-						filename = "__Fission and Fusion__/graphics/fast-rtg-hr.png",
+						filename = "__Fission-and-Fusion__/graphics/fast-rtg-hr.png",
 						width = 64,
 						height = 128,
 					}

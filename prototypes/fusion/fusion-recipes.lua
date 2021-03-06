@@ -24,7 +24,7 @@ data:extend(
 				{type = "fluid", name = "undarl-liquid-heavy-water", amount = 10}
 			},
 			main_product = "",
-			icon = "__Fission and Fusion__/graphics/icons/liquid-heavy-water.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/liquid-heavy-water.png",
 			icon_size = 32,
 			subgroup = "fluid-recipes",
 			order = "b[fluid-chemistry]-y",
@@ -51,7 +51,7 @@ data:extend(
 				{type = "fluid", name = "undarl-liquid-heavy-water", amount = 10}
 			},
 			main_product = "",
-			icon = "__Fission and Fusion__/graphics/icons/liquid-heavy-water.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/liquid-heavy-water.png",
 			icon_size = 32,
 			subgroup = "fluid-recipes",
 			order = "b[fluid-chemistry]-y",
@@ -77,7 +77,7 @@ data:extend(
 				{type = "fluid", name = "undarl-gas-deuterium", amount = 20}
 			},
 			main_product = "",
-			icon = "__Fission and Fusion__/graphics/icons/gas-deuterium.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/gas-deuterium.png",
 			icon_size = 32,
 			subgroup = "fluid-recipes",
 			order = "b[fluid-chemistry]-z",
@@ -158,13 +158,14 @@ data:extend(
 		{
 			type = "recipe",
 			name = "undarl-empty-deuterium-pressure-cylinder",
-			icon = "__Fission and Fusion__/graphics/icons/empty-deuterium-pressure-cylinder.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/empty-deuterium-pressure-cylinder.png",
 			icon_size = 32,
 			category = "crafting-with-fluid",
 			subgroup = "intermediate-product",
 			order = "r[uranium-processing]-z-b",
 			energy_required = 5,
 			enabled = false,
+			allow_decomposition = false,
 			ingredients =
 			{
 				{type = "item", name = "undarl-deuterium-pressure-cylinder", amount = 1},
@@ -177,3 +178,16 @@ data:extend(
 		},
 	}
 )
+
+return {
+	collect_intermediate_recipes = function (intermediate_recipes)
+		if settings.startup['undarl-enable-fusion-productivity'].value then
+			-- these are technically all intermediate recipes, but deuterium is probably cheap enough already...
+			intermediate_recipes["undarl-distill-heavy-water"] = true
+			intermediate_recipes["undarl-heavy-water-h2s-exchange"] = true
+			intermediate_recipes["undarl-make-deuterium"] = true
+			intermediate_recipes["undarl-deuterium-pellets"] = true
+		end
+		intermediate_recipes["undarl-pressure-cylinder"] = true
+	end
+}

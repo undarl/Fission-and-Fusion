@@ -1,5 +1,6 @@
 --Add radioisotope chance to breeder cell reprocessing
 if settings.startup['undarl-enable-radioisotopes'].value then
+	log(serpent.block(data.raw.recipe['breeder-fuel-reprocessing']))
 	table.insert(
 		data.raw.recipe['breeder-fuel-reprocessing'].results,
 	{name = "undarl-radioisotopes", probability = 0.5, amount = 1})
@@ -17,9 +18,8 @@ if settings.startup['undarl-enable-fission'].value then
 			{
 				type = "item",
 				name = "undarl-portable-breeder-fuel-cell",
-				icon = "__Fission and Fusion__/graphics/icons/portable-breeder-fuel-cell.png",
+				icon = "__Fission-and-Fusion__/graphics/icons/portable-breeder-fuel-cell.png",
 				icon_size = 32,
-				flags = {"goes-to-main-inventory"},
 				subgroup = "intermediate-product",
 				order = "r[uranium-processing]-a[uranium-fuel-cell]-n",
 				fuel_category = "undarl-portable-nuclear",
@@ -30,9 +30,8 @@ if settings.startup['undarl-enable-fission'].value then
 			{
 				type = "item",
 				name = "undarl-depleted-breeder-fuel-cell",
-				icon = "__Fission and Fusion__/graphics/icons/depleted-breeder-fuel-cell.png",
+				icon = "__Fission-and-Fusion__/graphics/icons/depleted-breeder-fuel-cell.png",
 				icon_size = 32,
-				flags = {"goes-to-main-inventory"},
 				subgroup = "intermediate-product",
 				stack_size = 60
 			},
@@ -71,7 +70,7 @@ if settings.startup['undarl-enable-fission'].value then
 				enabled = false,
 				category = "centrifuging",
 				ingredients = {{"undarl-depleted-breeder-fuel-cell", 10}},
-				icon = "__Fission and Fusion__/graphics/icons/reprocess-portable-breeder-cell.png",
+				icon = "__Fission-and-Fusion__/graphics/icons/reprocess-portable-breeder-cell.png",
 				icon_size = 32,
 				subgroup = "intermediate-product",
 				order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]-n",
@@ -107,3 +106,12 @@ if settings.startup['undarl-enable-fission'].value then
 		{name = "undarl-radioisotopes", probability = 0.5, amount = 1})
 	end
 end
+
+return {
+	collect_intermediate_recipes = function (intermediate_recipes)
+		if settings.startup['undarl-enable-fission'].value then
+			intermediate_recipes["undarl-portable-breeder-fuel-cell"] = true
+			intermediate_recipes["undarl-portable-mox-fuel-cell"] = true
+		end
+	end
+}

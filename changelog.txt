@@ -1,0 +1,112 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.5.0
+Date: 2020-08-18
+
+  Features:
+    - Add support for non-vanilla portable fusion generators
+  Changes:
+    - Updated for 1.0
+    - Fiddled with changelog again.
+  Bugfixes:
+    - Fix stuff reported by luacheck.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.6
+Date: 2020-05-31
+
+  Bugfixes:
+    - Fix graphics paths to refer to the _new_ mod name, rather than the old one.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 2020-05-31
+
+  Features:
+    - Make fusion generators input-output, just like the vanilla steam generators.
+  Changes:
+    - Add an explicit dependency from the fusion power technology on space science packs
+    - Deuterium gas now has a fuel value of 6.2392J (what you would get if you just set it on fire), and fusion generators are now highly efficient (the difference between fusing and burning Deuterium).
+    - Reduced collision box on RTG to match sprite.
+    - no longer requires control.lua to make the fusion generators work.
+  Graphics:
+    - improve the alignment of entity sprites for RTG and fusion reactor.
+  Bugfixes:
+    - Hide no power icon for RTG - thanks to baslr
+    - Updated old changelog entries
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 2020-05-31
+
+  Features:
+    - Allowed certain recipes to use productivity.
+  Changes:
+    - Updated for 0.18
+    - Renamed from "Fission and Fusion" to "Fission-and-Fusion", and wrote a helper to migrate the data from the old to the new name.
+  Translation:
+    - Added name for fuel categories as these are now displayed.
+  Graphics:
+    - Added glow from base nuclear reactor to the inertial confinement reactor
+    - Rewrote control.lua to hopefully perform better.
+    - Allow fusion reactor interface update to be disabled.
+  Bugfixes:
+    - Flagged RTG recycling and pressure cylinder unload recipes to not allow decomposition
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 2019-04-07
+
+  Changes:
+    - Updated for 0.17
+    - Reformatted changelog
+    - Removed quickbar flags
+    - Changed science pack names
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 2018-03-01
+
+  Changes:
+    - Merged a pull request from the helpful vctgross which patched some files for 0.16.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 2017-07-01
+
+  Bugfixes:
+    - Shifted fast RTG recycling to chemplants to fix a handcrafting bug
+    - added a setting to shift it to centrifuges instead.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 2017-06-04
+
+  Changes:
+    - Added pressure cylinders
+    - converted portable fusion reactors to run on compressed deuterium.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 2017-06-03
+
+  Changes:
+    - Reduced standard RTG size by half and scaled output down by 20%
+    - reduced RTG Array ingredients and output
+    - added a new Fast RTG that loses capacity over time.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2017-06-02
+
+  Changes:
+    - Increased default fusion reactor output by 50%
+    - Created a startup setting for reactor output
+    - Rebalanced fusion fuel recipes
+    - Removed workaround for generator heat capacity bug.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 2017-06-01
+
+  Changes:
+    - Initial release.

@@ -3,7 +3,7 @@ data:extend(
 		{
 			type = "technology",
 			name = "undarl-portable-reactors",
-			icon = "__Fission and Fusion__/graphics/fission-reactor-equipment.png",
+			icon = "__Fission-and-Fusion__/graphics/fission-reactor-equipment.png",
 			icon_size = 128,
 			effects =
 			{
@@ -21,9 +21,9 @@ data:extend(
 			{
 				count = 200,
 				ingredients = {
-					{"science-pack-1", 1},
-					{"science-pack-2", 1},
-					{"science-pack-3", 1},
+					{"automation-science-pack", 1},
+					{"logistic-science-pack", 1},
+					{"chemical-science-pack", 1},
 					{"production-science-pack", 1}
 				},
 				time = 30

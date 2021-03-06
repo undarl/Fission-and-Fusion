@@ -33,13 +33,14 @@ data:extend(
 		{
 			type = "recipe",
 			name = "undarl-fast-rtg-recycling",
-			icon = "__Fission and Fusion__/graphics/icons/fast-rtg-recycle.png",
+			icon = "__Fission-and-Fusion__/graphics/icons/fast-rtg-recycle.png",
 			icon_size = 32,
 			category = "chemistry",
 			subgroup = "equipment",
 			order = "a[energy-source]-c",
 			energy_required = 30,
 			enabled = false,
+			allow_decomposition = false,
 			ingredients =
 			{
 				{"undarl-fast-rtg-equipment-10", 1},
